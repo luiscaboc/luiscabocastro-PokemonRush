@@ -1,4 +1,3 @@
-import { Pacman } from './actors/Pacman';
 import { Map } from './actors/Map';
 import { FPSViewer } from './actors/FPSViewer';
 import { Actor } from './actors/Actor';
@@ -7,6 +6,7 @@ import { Barrier } from './actors/Barrier';
 import { MAP_A, MAP_B } from './utils/KeyboardMap';
 import { Circuit, createCircuit } from './state/CircuitManager';
 import { Background } from "./actors/Background";
+import { Pikachu } from "./actors/Pikachu"
 
 window.onload = () => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
@@ -21,11 +21,11 @@ window.onload = () => {
 
   let actors: Actor[] = [
     new Background({x: 0, y: 0}),
-    new FPSViewer({ x: 5, y: 100 }),
-    ...cars,
-    ...barriers,
+    new FPSViewer({ x: 200, y: 530 }),
+    //...cars,
+    //...barriers,
     Circuit,
-    new Pacman({ x: 100, y: 100 }),
+    new Pikachu({x:100, y: 1000})
   ];
 
   let lastFrame = 0;
