@@ -6,6 +6,7 @@ import { Car } from './actors/Car';
 import { Barrier } from './actors/Barrier';
 import { MAP_A, MAP_B } from './utils/KeyboardMap';
 import { Circuit, createCircuit } from './state/CircuitManager';
+import { Background } from "./actors/Background";
 
 window.onload = () => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
@@ -19,6 +20,7 @@ window.onload = () => {
   let cars: Car[] = [carA]; //, carB];
 
   let actors: Actor[] = [
+    new Background({x: 0, y: 0}),
     new FPSViewer({ x: 5, y: 100 }),
     ...cars,
     ...barriers,
