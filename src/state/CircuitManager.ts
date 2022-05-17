@@ -35,7 +35,7 @@ export class CircuitManager extends Actor {
   draw(delta: number, ctx: CanvasRenderingContext2D): void {
     ctx.font = '50px Arial';
     ctx.fillStyle = 'black';
-    ctx.fillText(`LAPS ${this.currentLap}/3`, this.position.x, this.position.y);
+    ctx.fillText(`Bayas ${this.currentLap}/5`, this.position.x, this.position.y);
   }
 
   addLap() {

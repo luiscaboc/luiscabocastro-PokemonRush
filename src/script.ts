@@ -7,6 +7,7 @@ import { MAP_A, MAP_B } from './utils/KeyboardMap';
 import { Circuit, createCircuit } from './state/CircuitManager';
 import { Background } from "./actors/Background";
 import { Pikachu } from "./actors/Pikachu"
+import { Ekans } from "./actors/Ekans"
 
 window.onload = () => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
@@ -25,7 +26,8 @@ window.onload = () => {
     //...cars,
     //...barriers,
     Circuit,
-    new Pikachu({x:100, y: 1000})
+    new Pikachu({x:100, y: 1000}),
+    new Ekans({x:100 , y:650})
   ];
 
   let lastFrame = 0;
