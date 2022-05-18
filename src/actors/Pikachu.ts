@@ -16,6 +16,7 @@ export class Pikachu extends Actor {
    //image: HTMLImageElement;
    imagePika: HTMLImageElement;
    sxParameters: number[];
+   syParameters: number[];
    timer: number;
    xFrame: number;
    yFrame: number;
@@ -31,9 +32,10 @@ export class Pikachu extends Actor {
      this.imagePika = new Image();
      this.imagePika.src = imagePika;
      this.sxParameters = [0, 1, 2, 3, 0];
+     this.syParameters = [0, 1, 2, 3, 0];
      this.timer = 0;
      this.xFrame = 0;
-     this.yFrame = 3;
+     this.yFrame = 0;
    }
 
    // add delta to update
@@ -53,7 +55,7 @@ export class Pikachu extends Actor {
 
      if (this.timer >= 0.08) {
        this.xFrame = (this.xFrame + 1) % 3; //estaba antes a 6
-       //this.yFrame = (this.yFrame + 2) % 3; // la he añadido yo ERROR FATAL
+       //this.yFrame = (this.yFrame + 1) % 3; // la he añadido yo ERROR FATAL
        this.timer = 0;
      }
    }
@@ -62,18 +64,24 @@ export class Pikachu extends Actor {
    draw(delta: number, ctx: CanvasRenderingContext2D) {
      let origin = this.origin;
 
-     let direction = 0;
+     let directionX = 0;
      if (this.speed.x != 0 && this.speed.x < 0) {
-       direction = 180;
+       directionX = 180;
      }
-  
+     
+      let directionY = 0;
+      if (this.speed.y != 0 && this.speed.y < 0) {
+        directionY = 180;
+      }
+
+
      ctx.translate(origin.x, origin.y);
      // Remember to paint a rectangle behind to configure your image
      //ctx.fillRect(0, 0, this.pikachuSize, this.pikachuSize); //medidas donde empieza pikachu
      ctx.drawImage(
        this.imagePika,
        30 * this.sxParameters[this.xFrame],
-       36 * this.yFrame,
+       36 * this.syParameters[this.yFrame],
        30,
        36,
        - this.pikachuSize /2,
@@ -87,23 +95,27 @@ export class Pikachu extends Actor {
      switch (key) {
        case 'ArrowRight':
          console.log('right');
+         this.speed.y = 0;
          this.speed.x = this.maxSpeed;
-         this.yFrame = 3;
+         this.xFrame = 2;
          break;
        case 'ArrowLeft':
          console.log('left');
+         this.speed.y = 0;
          this.speed.x = -this.maxSpeed;
-         this.yFrame = 1;
+         this.xFrame = 1;
          break;
        case 'ArrowUp':
          console.log('up');
-         this.speed.y = this.maxSpeed;
-         this.xFrame = 2;
+         this.speed.x = 0;
+         this.speed.y = -this.maxSpeed;
+         this.yFrame = 0;
          break;
        case 'ArrowDown':
          console.log('down');
-         this.speed.y = -this.maxSpeed;
-         this.xFrame = 1;
+         this.speed.x = 0;
+         this.speed.y = this.maxSpeed;
+         this.yFrame = 0;
          break;
        default:
          console.log('not a valid key');

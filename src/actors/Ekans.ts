@@ -19,15 +19,11 @@ export class Ekans extends Actor {
    timer: number;
    xFrame: number;
    yFrame: number;
-   width: number;
-   height: number;
 
-   constructor(initialPos: Point, color = 'yellow', maxSpeed = 100) {
+
+   constructor(initialPos: Point, color = 'yellow', maxSpeed = -200) {
      super(initialPos);
-     this.width = 80;
-     this.height = 60;
-     this.ekansSize = this.width + this.height;
-     //this.ekansSize = 60;
+     this.ekansSize = 65;
      this.ekansMove = 30;
      this.origin = { x: initialPos.x, y: initialPos.y };
      this.color = color;
@@ -38,40 +34,52 @@ export class Ekans extends Actor {
      this.sxParameters = [0, 1, 2, 0];
      this.timer = 0;
      this.xFrame = 0;
-     this.yFrame = 2;
+     this.yFrame = 1;
    }
 
    // add delta to update
-   update(delta: number) {
-     this.ekansMove += 0.8;
-     // speed * delta
-     let newPosX = this.origin.x + this.speed.x * delta;
-     if (newPosX <= 1024 - this.ekansSize && newPosX >= this.ekansSize) {
-       this.origin.x = newPosX;
-     }
-     this.timer += delta;
+    update(delta: number) {
+      this.ekansMove += 0.8;
+      // speed * delta
+      let newPosX = this.origin.x + this.speed.x * delta;
+      // if (newPosX <= 1140 - this.ekansSize/2 && newPosX >= this.ekansSize/2) {
+      //   this.origin.x = newPosX;
+      
+      // if (this.origin.x > 1144 + this.ekansSize){
+      //   this.origin.x = 0 - this.ekansSize;
+      // }
+      // }
+        this.origin.x = newPosX;
+        if (this.origin.x < 0) {
+          this.origin.x = 1200;
+        }
 
-     if (this.timer >= 0.08) {
-       this.xFrame = (this.xFrame + 1) % 3; //estaba antes a 6
-       this.timer = 0;
-     }
-   }
+      this.timer += delta;
+
+      if (this.timer >= 0.1) {
+        this.xFrame = (this.xFrame + 1) % 3; //estaba antes a 6
+        this.timer = 0;
+      }
+    }
+      //this.origin.x = (this.origin.x + this.speed) % 500;
+
+
 
    //add delta to draw
-   draw(delta: number, ctx: CanvasRenderingContext2D) {
-     let origin = this.origin;
+    draw(delta: number, ctx: CanvasRenderingContext2D) {
+      let origin = this.origin;
 
-     let direction = 0;
-     if (this.speed.x != 0 && this.speed.x < 0) {
-       direction = 180;
-     }
-     ctx.translate(origin.x, origin.y);
+      let direction = 0;
+      if (this.speed.x != 0 && this.speed.x < 0) {
+        direction = 180;
+      }
+      ctx.translate(origin.x, origin.y);
      // Remember to paint a rectangle behind to configure your image
-     ctx.fillRect(0, 0, this.width, this.height); //medidas donde empieza pikachu
+     //ctx.fillRect(0, 0, this.ekansSize, this.ekansSize); //medidas donde empieza pikachu
      ctx.drawImage(
        this.imageEkans,
-       0, // * this.sxParameters[this.xFrame],
-       0, // * this.yFrame,
+       50 * this.sxParameters[this.xFrame],
+       0 * this.yFrame,
        50,
        50,
        - this.ekansSize /2,
@@ -109,3 +117,5 @@ export class Ekans extends Actor {
   //    }
   //  }
  }
+
+

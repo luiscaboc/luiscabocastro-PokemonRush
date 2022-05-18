@@ -8,7 +8,7 @@ export class CircuitManager extends Actor {
   currentBarrier: number;
   currentLap: number;
   constructor(actor: Actor) {
-    super({ x: 800, y: 100 });
+    super({ x: 720, y: 170 });
     this.currentBarrier = 0;
     this.barriers = [];
     this.currentLap = 0;
@@ -33,8 +33,8 @@ export class CircuitManager extends Actor {
   }
 
   draw(delta: number, ctx: CanvasRenderingContext2D): void {
-    ctx.font = '50px Arial';
-    ctx.fillStyle = 'black';
+    ctx.font = '25px Arial';
+    ctx.fillStyle = 'white';
     ctx.fillText(`Bayas ${this.currentLap}/5`, this.position.x, this.position.y);
   }
 

@@ -6,8 +6,11 @@ import { Barrier } from './actors/Barrier';
 import { MAP_A, MAP_B } from './utils/KeyboardMap';
 import { Circuit, createCircuit } from './state/CircuitManager';
 import { Background } from "./actors/Background";
-import { Pikachu } from "./actors/Pikachu"
-import { Ekans } from "./actors/Ekans"
+import { Pikachu } from "./actors/Pikachu";
+import { Ekans } from "./actors/Ekans";
+import { BayaFrambu , BayaMeloc , BayaOram , BayaSafre , BayaZanama } from "./actors/Bayas";
+//import { Comida } from "./actors/ObstaculoBaya" ERROR
+
 
 window.onload = () => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
@@ -20,15 +23,42 @@ window.onload = () => {
   let barriers: Barrier[] = [...Circuit.barriers];
   let cars: Car[] = [carA]; //, carB];
 
+  //let totalBayas: Comida[] = circuitBayas(Pikachu); ERROR
+
+  let ekansActors: Actor[] = [
+    new Ekans({x:10 , y:630}),
+    new Ekans({x:10 , y:690}),
+    new Ekans({x:10 , y:270}),
+    new Ekans({x:10 , y:390}),
+    new Ekans({x:10 , y:330}),
+    new Ekans({x:10 , y:930}),
+    new Ekans({x:10 , y:1110}),]
+
   let actors: Actor[] = [
     new Background({x: 0, y: 0}),
     new FPSViewer({ x: 200, y: 530 }),
     //...cars,
     //...barriers,
+    //...totalBayas,
     Circuit,
-    new Pikachu({x:100, y: 1000}),
-    new Ekans({x:100 , y:650})
+    ... ekansActors,
+
+    // new Ekans({x:1100 , y:630}),
+    // new Ekans({x:0 , y:690}),
+    // new Ekans({x:0 , y:270}),
+    // new Ekans({x:0 , y:390}),
+    // new Ekans({x:0 , y:330}),
+    // new Ekans({x:0 , y:930}),
+    // new Ekans({x:0 , y:1110}),
+    new Pikachu({x:550, y: 1300}),
+    new BayaFrambu({x: 500, y:1025}),
+    new BayaMeloc({x: 195, y:800}),
+    new BayaOram({x:322 , y:150}),
+    new BayaSafre({x: 920, y:440}),
+    new BayaZanama({x: 950, y:920})
   ];
+
+
 
   let lastFrame = 0;
   const render = (time: number) => {
