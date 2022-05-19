@@ -16,3 +16,15 @@ body {
   border-style: ridge;
   box-shadow: 1px 1px 0px hsl(333, 42%, 10%);
 }
+
+.container {
+  border: 3px transparent solid;
+  position:static;
+  padding-right: 100px;
+  padding-bottom: 300px;
+  
+}
+.img {
+  position: static;
+  float: left;
+}

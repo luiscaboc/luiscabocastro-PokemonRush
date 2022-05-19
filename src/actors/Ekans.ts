@@ -1,32 +1,27 @@
 import { Actor } from './Actor';
 import { Point } from '../types/Point';
-// import { converAngleToRad } from '../utils/angleToRad';
 import imageEkans from "../assets/ekansSprites.png";
 
 export class Ekans extends Actor {
    ekansSize: number;
    ekansMove: number;
    origin: Point;
-   color: string;
    maxSpeed: number;
    speed: Point;
  
 
    // IMAGES
-   //image: HTMLImageElement;
    imageEkans: HTMLImageElement;
    sxParameters: number[];
    timer: number;
    xFrame: number;
-   yFrame: number;
 
 
-   constructor(initialPos: Point, color = 'yellow', maxSpeed = -200) {
+   constructor(initialPos: Point, maxSpeed = -200) {
      super(initialPos);
      this.ekansSize = 65;
      this.ekansMove = 30;
      this.origin = { x: initialPos.x, y: initialPos.y };
-     this.color = color;
      this.maxSpeed = maxSpeed;
      this.speed = { x: maxSpeed, y: 0 };
      this.imageEkans = new Image();
@@ -34,7 +29,6 @@ export class Ekans extends Actor {
      this.sxParameters = [0, 1, 2, 0];
      this.timer = 0;
      this.xFrame = 0;
-     this.yFrame = 1;
    }
 
    // add delta to update
@@ -79,7 +73,7 @@ export class Ekans extends Actor {
      ctx.drawImage(
        this.imageEkans,
        50 * this.sxParameters[this.xFrame],
-       0 * this.yFrame,
+       0,
        50,
        50,
        - this.ekansSize /2,
@@ -88,34 +82,16 @@ export class Ekans extends Actor {
        this.ekansSize
      );
    }
+  }
 
-  //  keyboard_event_down(key: string) {
-  //    switch (key) {
-  //      case 'ArrowRight':
-  //        console.log('right');
-  //        this.speed.x = this.maxSpeed;
-  //        this.yFrame = 3;
-  //        break;
-  //      case 'ArrowLeft':
-  //        console.log('left');
-  //        this.speed.x = -this.maxSpeed;
-  //        this.yFrame = 1;
-  //        break;
-  //      case 'ArrowUp':
-  //        console.log('up');
-  //        this.speed.y = this.maxSpeed;
-  //        this.xFrame = 3;
-  //        break;
-  //      case 'ArrowDown':
-  //        console.log('down');
-  //        this.speed.y = -this.maxSpeed;
-  //        this.xFrame = 1;
-  //        break;
-  //      default:
-  //        console.log('not a valid key');
-  //        break;
-  //    }
-  //  }
- }
+  // function initObstacles() {
+  //   let ekansArray = [];
+  //   for (let i = 0; i < 2; i++) {
+  //     let x = i * 300;
+  //     ekansArray.push(new Ekans(873875893, -200))
+  //   }
+  // }
+
+
 
 

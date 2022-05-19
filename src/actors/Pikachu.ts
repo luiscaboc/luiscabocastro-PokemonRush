@@ -7,7 +7,6 @@ export class Pikachu extends Actor {
    pikachuSize: number;
    pikachuMove: number;
    origin: Point;
-   color: string;
    maxSpeed: number;
    speed: Point;
  
@@ -21,12 +20,11 @@ export class Pikachu extends Actor {
    xFrame: number;
    yFrame: number;
 
-   constructor(initialPos: Point, color = 'yellow', maxSpeed = 100) {
+   constructor(initialPos: Point, maxSpeed = 180) {
      super(initialPos);
      this.pikachuSize = 52;
      this.pikachuMove = 30;
      this.origin = { x: initialPos.x, y: initialPos.y };
-     this.color = color;
      this.maxSpeed = maxSpeed;
      this.speed = { x: maxSpeed, y: 0 };
      this.imagePika = new Image();

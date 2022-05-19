@@ -1,13 +1,10 @@
 import { Actor } from './Actor';
 import { Point } from '../types/Point';
-// import { converAngleToRad } from '../utils/angleToRad';
 import imageBayaFrambu from "../assets/bayas/Baya_Frambu.png";
 import imageBayaMeloc from "../assets/bayas/Baya_Meloc.png";
 import imageBayaOram from "../assets/bayas/Baya_Oram.png";
 import imageBayaSafre from "../assets/bayas/Baya_Safre.png";
 import imageBayaZanama from "../assets/bayas/Baya_Zanama.png";
-import { Pikachu } from './Pikachu';
-import { getMaxListeners } from 'process';
 
 
 export class BayaFrambu extends Actor {
