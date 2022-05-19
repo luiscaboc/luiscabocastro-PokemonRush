@@ -20,7 +20,7 @@ export class Pikachu extends Actor {
    xFrame: number;
    yFrame: number;
 
-   constructor(initialPos: Point, maxSpeed = 180) {
+   constructor(initialPos: Point, maxSpeed = 0) {
      super(initialPos);
      this.pikachuSize = 52;
      this.pikachuMove = 30;
@@ -29,11 +29,11 @@ export class Pikachu extends Actor {
      this.speed = { x: maxSpeed, y: 0 };
      this.imagePika = new Image();
      this.imagePika.src = imagePika;
-     this.sxParameters = [0, 1, 2, 3, 0];
-     this.syParameters = [0, 1, 2, 3, 0];
+     this.sxParameters = [0, 1, 2, 0];
+     this.syParameters = [0, 1, 2, 0];
      this.timer = 0;
-     this.xFrame = 0;
-     this.yFrame = 0;
+     this.xFrame = 1;
+     this.yFrame = 2;
    }
 
    // add delta to update
@@ -53,8 +53,12 @@ export class Pikachu extends Actor {
 
      if (this.timer >= 0.08) {
        this.xFrame = (this.xFrame + 1) % 3; //estaba antes a 6
-       //this.yFrame = (this.yFrame + 1) % 3; // la he añadido yo ERROR FATAL
        this.timer = 0;
+     }
+     if (this.timer >= 0.08) {
+        this.yFrame = (this.yFrame + 1) % 3; // la he añadido yo ERROR FATAL
+        this.timer = 0;
+       
      }
    }
 
@@ -63,11 +67,13 @@ export class Pikachu extends Actor {
      let origin = this.origin;
 
      let directionX = 0;
+     this.maxSpeed = 180;
      if (this.speed.x != 0 && this.speed.x < 0) {
        directionX = 180;
      }
      
       let directionY = 0;
+      this.maxSpeed = 180;
       if (this.speed.y != 0 && this.speed.y < 0) {
         directionY = 180;
       }
@@ -107,7 +113,7 @@ export class Pikachu extends Actor {
          console.log('up');
          this.speed.x = 0;
          this.speed.y = -this.maxSpeed;
-         this.yFrame = 0;
+         this.yFrame = 2;
          break;
        case 'ArrowDown':
          console.log('down');
@@ -120,4 +126,21 @@ export class Pikachu extends Actor {
          break;
      }
    }
+
+
+
+
+
  }
+
+//  const pikachu = (x: any, y: any, width: any, height: any) => {
+//   this.x = x;
+//   this.y = y;
+//   this.width = width;
+//   this.height = height;
+
+// }
+
+// pikachu.prototype.cross = function(pikachu) {
+
+// }

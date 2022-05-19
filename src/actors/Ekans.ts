@@ -36,6 +36,8 @@ export class Ekans extends Actor {
       this.ekansMove += 0.8;
       // speed * delta
       let newPosX = this.origin.x + this.speed.x * delta;
+
+      
       // if (newPosX <= 1140 - this.ekansSize/2 && newPosX >= this.ekansSize/2) {
       //   this.origin.x = newPosX;
       
