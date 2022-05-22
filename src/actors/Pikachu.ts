@@ -6,7 +6,6 @@ import imagePika from "../assets/pikasprites.png";
 export class Pikachu extends Actor {
    pikachuSize: number;
    pikachuMove: number;
-   origin: Point;
    maxSpeed: number;
    speed: Point;
  
@@ -24,29 +23,28 @@ export class Pikachu extends Actor {
      super(initialPos);
      this.pikachuSize = 52;
      this.pikachuMove = 30;
-     this.origin = { x: initialPos.x, y: initialPos.y };
      this.maxSpeed = maxSpeed;
      this.speed = { x: maxSpeed, y: 0 };
      this.imagePika = new Image();
      this.imagePika.src = imagePika;
-     this.sxParameters = [0, 1, 2, 0];
-     this.syParameters = [0, 1, 2, 0];
+     this.sxParameters = [0, 1, 2];
+     this.syParameters = [0, 1, 2, 3, 4];
      this.timer = 0;
-     this.xFrame = 1;
-     this.yFrame = 2;
+     this.xFrame = 0;
+     this.yFrame = 0;
    }
 
    // add delta to update
    update(delta: number) {
      this.pikachuMove += 0.8;
      // speed * delta
-     let newPosX = this.origin.x + this.speed.x * delta;
+     let newPosX = this.position.x + this.speed.x * delta;
      if (newPosX <= 1140 - this.pikachuSize/2  && newPosX >= this.pikachuSize/2) {
-       this.origin.x = newPosX;
+       this.position.x = newPosX;
      }
-     let newPosY = this.origin.y + this.speed.y * delta;
+     let newPosY = this.position.y + this.speed.y * delta;
      if (newPosY <= 1380 - this.pikachuSize/2  && newPosY >= this.pikachuSize/2) {
-       this.origin.y = newPosY;
+       this.position.y = newPosY;
      };
 
      this.timer += delta;
@@ -56,7 +54,7 @@ export class Pikachu extends Actor {
        this.timer = 0;
      }
      if (this.timer >= 0.08) {
-        this.yFrame = (this.yFrame + 1) % 3; // la he añadido yo ERROR FATAL
+        this.yFrame = (this.yFrame + 1) % 4; // la he añadido yo ERROR FATAL
         this.timer = 0;
        
      }
@@ -64,7 +62,7 @@ export class Pikachu extends Actor {
 
    //add delta to draw
    draw(delta: number, ctx: CanvasRenderingContext2D) {
-     let origin = this.origin;
+     let position = this.position;
 
      let directionX = 0;
      this.maxSpeed = 180;
@@ -79,7 +77,7 @@ export class Pikachu extends Actor {
       }
 
 
-     ctx.translate(origin.x, origin.y);
+     ctx.translate(position.x, position.y);
      // Remember to paint a rectangle behind to configure your image
      //ctx.fillRect(0, 0, this.pikachuSize, this.pikachuSize); //medidas donde empieza pikachu
      ctx.drawImage(
@@ -101,13 +99,13 @@ export class Pikachu extends Actor {
          console.log('right');
          this.speed.y = 0;
          this.speed.x = this.maxSpeed;
-         this.xFrame = 2;
+         this.yFrame = 3;
          break;
        case 'ArrowLeft':
          console.log('left');
          this.speed.y = 0;
          this.speed.x = -this.maxSpeed;
-         this.xFrame = 1;
+         this.yFrame = 1;
          break;
        case 'ArrowUp':
          console.log('up');
@@ -126,12 +124,16 @@ export class Pikachu extends Actor {
          break;
      }
    }
-
-
-
-
-
  }
+
+ 
+
+
+
+
+
+
+
 
 //  const pikachu = (x: any, y: any, width: any, height: any) => {
 //   this.x = x;
