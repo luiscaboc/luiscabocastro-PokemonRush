@@ -2,15 +2,18 @@
 ![avatar](https://img.shields.io/badge/NPM-8.10.0-blue)
 ![avatar](https://img.shields.io/badge/Vite-2.9.9-blue)
 
-![avatar](./src/assets/PokemonTitle.png)
+<p align="center">
+    <img src="./src/assets/PokemonTitle.png" width="500"/>
+</p>
 
-[![Image from Gyazo](https://i.gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da.gif)](https://gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da)
 
+<p align="center">
+    <img src="https://media1.giphy.com/media/yN8PgNoECUwPqSg4Sz/giphy.gif?cid=790b7611d16e64744ab5bfdefc94a404952fc750fd1cb0d2&rid=giphy.gif&ct=g" width="500"/>
+</p>
 ---
 
 [Let's Play!](https://luiscaboc.github.io/luiscabocastro-PokemonRush/)
 
-[![Image from Gyazo](https://i.gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da.gif)](https://gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da)
 
 # Index
 
@@ -28,7 +31,6 @@
 
 # Descripción del juego
 
-[![Image from Gyazo](https://i.gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da.gif)](https://gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da)
 
 >
 
@@ -152,10 +154,9 @@ A completar:
 
 export class Pikachu extends Actor {
    pikachuSize: number;
-   pikachuMove: number;
    maxSpeed: number;
    speed: Point;
-    imagePika: HTMLImageElement;
+   imagePika: HTMLImageElement;
    sxParameters: number[];
    syParameters: number[];
    timer: number;
@@ -165,7 +166,6 @@ export class Pikachu extends Actor {
    constructor(initialPos: Point, maxSpeed = 0) {
      super(initialPos);
      this.pikachuSize = 52;
-     this.pikachuMove = 30;
      this.maxSpeed = maxSpeed;
      this.speed = { x: maxSpeed, y: 0 };
      this.imagePika = new Image();
