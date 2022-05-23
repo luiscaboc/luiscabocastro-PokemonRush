@@ -10,12 +10,10 @@ import {
   Baya_Safre,
   Baya_Zanama,
 } from './actors/Bayas';
-//import { BayaCounter } from './actors/FPSViewer';
 
 window.onload = () => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
-
 
   let pikachu = new Pikachu({ x: 570, y: 1290 });
 
@@ -105,7 +103,4 @@ window.onload = () => {
       actor.keyboard_event_up(e.key);
     });
   });
-
-
-
 };
