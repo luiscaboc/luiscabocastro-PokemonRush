@@ -4,29 +4,24 @@
 
 ![avatar](./src/assets/PokemonTitle.png)
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)    
 
-[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDguODYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDguODYgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDYuMjQiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMDQuMjQiIHk9IjAiIHdpZHRoPSIxMDQuNjIiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTMuOTUgMTguMTlMMTMuOTUgMTguMTlMMTMuOTUgMTcuMzlRMTMuOTUgMTYuMTkgMTQuMzggMTUuMjdRMTQuODAgMTQuMzUgMTUuNjAgMTMuODVRMTYuNDAgMTMuMzUgMTcuNDUgMTMuMzVMMTcuNDUgMTMuMzVRMTguODYgMTMuMzUgMTkuNzMgMTQuMTJRMjAuNTkgMTQuODkgMjAuNzMgMTYuMjlMMjAuNzMgMTYuMjlMMTkuMjUgMTYuMjlRMTkuMTQgMTUuMzcgMTguNzEgMTQuOTZRMTguMjggMTQuNTUgMTcuNDUgMTQuNTVMMTcuNDUgMTQuNTVRMTYuNDggMTQuNTUgMTUuOTcgMTUuMjZRMTUuNDUgMTUuOTYgMTUuNDQgMTcuMzNMMTUuNDQgMTcuMzNMMTUuNDQgMTguMDlRMTUuNDQgMTkuNDcgMTUuOTMgMjAuMjBRMTYuNDMgMjAuOTIgMTcuMzggMjAuOTJMMTcuMzggMjAuOTJRMTguMjUgMjAuOTIgMTguNjkgMjAuNTNRMTkuMTMgMjAuMTQgMTkuMjUgMTkuMjJMMTkuMjUgMTkuMjJMMjAuNzMgMTkuMjJRMjAuNjAgMjAuNTkgMTkuNzIgMjEuMzVRMTguODQgMjIuMTIgMTcuMzggMjIuMTJMMTcuMzggMjIuMTJRMTYuMzYgMjIuMTIgMTUuNTkgMjEuNjNRMTQuODEgMjEuMTUgMTQuMzkgMjAuMjZRMTMuOTcgMTkuMzcgMTMuOTUgMTguMTlaTTI0Ljc3IDE4LjAwTDI0Ljc3IDE4LjAwTDI0Ljc3IDE3LjUyUTI0Ljc3IDE2LjI4IDI1LjIxIDE1LjMyUTI1LjY1IDE0LjM3IDI2LjQ2IDEzLjg2UTI3LjI3IDEzLjM1IDI4LjMxIDEzLjM1UTI5LjM1IDEzLjM1IDMwLjE2IDEzLjg1UTMwLjk2IDE0LjM1IDMxLjQwIDE1LjI5UTMxLjg0IDE2LjIzIDMxLjg1IDE3LjQ4TDMxLjg1IDE3LjQ4TDMxLjg1IDE3Ljk2UTMxLjg1IDE5LjIxIDMxLjQxIDIwLjE2UTMwLjk4IDIxLjEwIDMwLjE4IDIxLjYxUTI5LjM3IDIyLjEyIDI4LjMyIDIyLjEyTDI4LjMyIDIyLjEyUTI3LjI4IDIyLjEyIDI2LjQ3IDIxLjYxUTI1LjY2IDIxLjEwIDI1LjIyIDIwLjE3UTI0Ljc4IDE5LjIzIDI0Ljc3IDE4LjAwWk0yNi4yNSAxNy40NkwyNi4yNSAxNy45NlEyNi4yNSAxOS4zNiAyNi44MCAyMC4xM1EyNy4zNSAyMC45MCAyOC4zMiAyMC45MEwyOC4zMiAyMC45MFEyOS4zMSAyMC45MCAyOS44NCAyMC4xNVEzMC4zNyAxOS40MCAzMC4zNyAxNy45NkwzMC4zNyAxNy45NkwzMC4zNyAxNy41MVEzMC4zNyAxNi4wOSAyOS44MyAxNS4zNFEyOS4yOSAxNC41OCAyOC4zMSAxNC41OEwyOC4zMSAxNC41OFEyNy4zNSAxNC41OCAyNi44MSAxNS4zM1EyNi4yNiAxNi4wOSAyNi4yNSAxNy40NkwyNi4yNSAxNy40NlpNMzcuODAgMjJMMzYuMzEgMjJMMzYuMzEgMTMuNDdMMzcuODAgMTMuNDdMNDEuNjEgMTkuNTRMNDEuNjEgMTMuNDdMNDMuMDggMTMuNDdMNDMuMDggMjJMNDEuNjAgMjJMMzcuODAgMTUuOTVMMzcuODAgMjJaTTQ5LjUwIDE0LjY2TDQ2Ljg3IDE0LjY2TDQ2Ljg3IDEzLjQ3TDUzLjYzIDEzLjQ3TDUzLjYzIDE0LjY2TDUwLjk3IDE0LjY2TDUwLjk3IDIyTDQ5LjUwIDIyTDQ5LjUwIDE0LjY2Wk01OC4xNyAyMkw1Ni42MyAyMkw1OS44NSAxMy40N0w2MS4xOCAxMy40N0w2NC40MSAyMkw2Mi44NiAyMkw2Mi4xNiAyMC4wMUw1OC44NiAyMC4wMUw1OC4xNyAyMlpNNjAuNTEgMTUuMjhMNTkuMjggMTguODJMNjEuNzUgMTguODJMNjAuNTEgMTUuMjhaTTY5LjkzIDIyTDY4LjQ1IDIyTDY4LjQ1IDEzLjQ3TDY5LjkzIDEzLjQ3TDY5LjkzIDIyWk03Ni4yMiAyMkw3NC43NCAyMkw3NC43NCAxMy40N0w3Ni4yMiAxMy40N0w4MC4wNCAxOS41NEw4MC4wNCAxMy40N0w4MS41MSAxMy40N0w4MS41MSAyMkw4MC4wMiAyMkw3Ni4yMiAxNS45NUw3Ni4yMiAyMlpNODUuODEgMTkuNDJMODUuODEgMTkuNDJMODcuMzAgMTkuNDJRODcuMzAgMjAuMTUgODcuNzggMjAuNTVRODguMjYgMjAuOTUgODkuMTUgMjAuOTVMODkuMTUgMjAuOTVRODkuOTMgMjAuOTUgOTAuMzIgMjAuNjNROTAuNzEgMjAuMzIgOTAuNzEgMTkuODBMOTAuNzEgMTkuODBROTAuNzEgMTkuMjQgOTAuMzEgMTguOTRRODkuOTEgMTguNjMgODguODggMTguMzJRODcuODUgMTguMDEgODcuMjQgMTcuNjNMODcuMjQgMTcuNjNRODYuMDggMTYuOTAgODYuMDggMTUuNzJMODYuMDggMTUuNzJRODYuMDggMTQuNjkgODYuOTIgMTQuMDJRODcuNzYgMTMuMzUgODkuMTAgMTMuMzVMODkuMTAgMTMuMzVRODkuOTkgMTMuMzUgOTAuNjkgMTMuNjhROTEuMzkgMTQuMDEgOTEuNzggMTQuNjFROTIuMTggMTUuMjIgOTIuMTggMTUuOTZMOTIuMTggMTUuOTZMOTAuNzEgMTUuOTZROTAuNzEgMTUuMjkgOTAuMjkgMTQuOTFRODkuODcgMTQuNTQgODkuMDkgMTQuNTRMODkuMDkgMTQuNTRRODguMzYgMTQuNTQgODcuOTYgMTQuODVRODcuNTYgMTUuMTYgODcuNTYgMTUuNzFMODcuNTYgMTUuNzFRODcuNTYgMTYuMTggODcuOTkgMTYuNTBRODguNDMgMTYuODEgODkuNDIgMTcuMTBROTAuNDIgMTcuNDAgOTEuMDIgMTcuNzhROTEuNjMgMTguMTYgOTEuOTEgMTguNjVROTIuMTkgMTkuMTMgOTIuMTkgMTkuNzlMOTIuMTkgMTkuNzlROTIuMTkgMjAuODYgOTEuMzcgMjEuNDlROTAuNTUgMjIuMTIgODkuMTUgMjIuMTJMODkuMTUgMjIuMTJRODguMjMgMjIuMTIgODcuNDUgMjEuNzdRODYuNjcgMjEuNDMgODYuMjQgMjAuODNRODUuODEgMjAuMjIgODUuODEgMTkuNDJaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEyMC44MSAyMkwxMTguNDMgMjJMMTE4LjQzIDEzLjYwTDEyMi4yNyAxMy42MFExMjMuNDEgMTMuNjAgMTI0LjI1IDEzLjk4UTEyNS4wOSAxNC4zNSAxMjUuNTUgMTUuMDZRMTI2LjAwIDE1Ljc2IDEyNi4wMCAxNi43MUwxMjYuMDAgMTYuNzFRMTI2LjAwIDE3LjY2IDEyNS41NSAxOC4zNVExMjUuMDkgMTkuMDUgMTI0LjI1IDE5LjQyUTEyMy40MSAxOS44MCAxMjIuMjcgMTkuODBMMTIyLjI3IDE5LjgwTDEyMC44MSAxOS44MEwxMjAuODEgMjJaTTEyMC44MSAxNS40N0wxMjAuODEgMTcuOTNMMTIyLjEzIDE3LjkzUTEyMi44NiAxNy45MyAxMjMuMjMgMTcuNjFRMTIzLjYwIDE3LjI5IDEyMy42MCAxNi43MUwxMjMuNjAgMTYuNzFRMTIzLjYwIDE2LjEyIDEyMy4yMyAxNS44MFExMjIuODYgMTUuNDcgMTIyLjEzIDE1LjQ3TDEyMi4xMyAxNS40N0wxMjAuODEgMTUuNDdaTTEzMy4xMyAyMkwxMzAuNzYgMjJMMTMwLjc2IDEzLjYwTDEzMy4xMyAxMy42MEwxMzMuMTMgMjJaTTE0MC42NiAyMkwxMzguMzEgMjJMMTM4LjMxIDEzLjYwTDE0MC42NiAxMy42MEwxNDAuNjYgMTcuMDlMMTQzLjkyIDEzLjYwTDE0Ni41MyAxMy42MEwxNDMuMTAgMTcuMzJMMTQ2LjcxIDIyTDE0My45NSAyMkwxNDEuNTUgMTguOTVMMTQwLjY2IDE5LjkwTDE0MC42NiAyMlpNMTUyLjI0IDIyTDE0OS44MSAyMkwxNTMuNTIgMTMuNjBMMTU1Ljg2IDEzLjYwTDE1OS41OCAyMkwxNTcuMTEgMjJMMTU2LjQ1IDIwLjM3TDE1Mi45MCAyMC4zN0wxNTIuMjQgMjJaTTE1NC42NyAxNS45M0wxNTMuNTkgMTguNjFMMTU1Ljc1IDE4LjYxTDE1NC42NyAxNS45M1pNMTYzLjMwIDE3LjgwTDE2My4zMCAxNy44MFExNjMuMzAgMTYuNTQgMTYzLjkwIDE1LjU0UTE2NC41MCAxNC41NSAxNjUuNTUgMTMuOTlRMTY2LjYwIDEzLjQzIDE2Ny45MiAxMy40M0wxNjcuOTIgMTMuNDNRMTY5LjA4IDEzLjQzIDE3MC4wMCAxMy44NFExNzAuOTIgMTQuMjUgMTcxLjU0IDE1LjAyTDE3MS41NCAxNS4wMkwxNzAuMDMgMTYuMzlRMTY5LjIxIDE1LjQwIDE2OC4wNSAxNS40MEwxNjguMDUgMTUuNDBRMTY3LjM2IDE1LjQwIDE2Ni44MyAxNS43MFExNjYuMjkgMTYgMTY2LjAwIDE2LjU0UTE2NS43MCAxNy4wOSAxNjUuNzAgMTcuODBMMTY1LjcwIDE3LjgwUTE2NS43MCAxOC41MSAxNjYuMDAgMTkuMDVRMTY2LjI5IDE5LjYwIDE2Ni44MyAxOS45MFExNjcuMzYgMjAuMjAgMTY4LjA1IDIwLjIwTDE2OC4wNSAyMC4yMFExNjkuMjEgMjAuMjAgMTcwLjAzIDE5LjIyTDE3MC4wMyAxOS4yMkwxNzEuNTQgMjAuNThRMTcwLjkzIDIxLjM1IDE3MC4wMCAyMS43NlExNjkuMDggMjIuMTcgMTY3LjkyIDIyLjE3TDE2Ny45MiAyMi4xN1ExNjYuNjAgMjIuMTcgMTY1LjU1IDIxLjYxUTE2NC41MCAyMS4wNSAxNjMuOTAgMjAuMDVRMTYzLjMwIDE5LjA2IDE2My4zMCAxNy44MFpNMTc4LjQ1IDIyTDE3Ni4wNyAyMkwxNzYuMDcgMTMuNjBMMTc4LjQ1IDEzLjYwTDE3OC40NSAxNi43NkwxODEuNjkgMTYuNzZMMTgxLjY5IDEzLjYwTDE4NC4wNiAxMy42MEwxODQuMDYgMjJMMTgxLjY5IDIyTDE4MS42OSAxOC43MkwxNzguNDUgMTguNzJMMTc4LjQ1IDIyWk0xODkuMTYgMTguMjZMMTg5LjE2IDE4LjI2TDE4OS4xNiAxMy42MEwxOTEuNTQgMTMuNjBMMTkxLjU0IDE4LjE5UTE5MS41NCAyMC4yMCAxOTMuMTMgMjAuMjBMMTkzLjEzIDIwLjIwUTE5NC43MSAyMC4yMCAxOTQuNzEgMTguMTlMMTk0LjcxIDE4LjE5TDE5NC43MSAxMy42MEwxOTcuMDUgMTMuNjBMMTk3LjA1IDE4LjI2UTE5Ny4wNSAyMC4xMyAxOTYuMDEgMjEuMTVRMTk0Ljk3IDIyLjE3IDE5My4xMSAyMi4xN0wxOTMuMTEgMjIuMTdRMTkxLjIzIDIyLjE3IDE5MC4xOSAyMS4xNVExODkuMTYgMjAuMTMgMTg5LjE2IDE4LjI2WiIgZmlsbD0iI0ZGRkZGRiIgeD0iMTE3LjI0Ii8+PC9zdmc+)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)   [![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDguODYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDguODYgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDYuMjQiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMDQuMjQiIHk9IjAiIHdpZHRoPSIxMDQuNjIiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTMuOTUgMTguMTlMMTMuOTUgMTguMTlMMTMuOTUgMTcuMzlRMTMuOTUgMTYuMTkgMTQuMzggMTUuMjdRMTQuODAgMTQuMzUgMTUuNjAgMTMuODVRMTYuNDAgMTMuMzUgMTcuNDUgMTMuMzVMMTcuNDUgMTMuMzVRMTguODYgMTMuMzUgMTkuNzMgMTQuMTJRMjAuNTkgMTQuODkgMjAuNzMgMTYuMjlMMjAuNzMgMTYuMjlMMTkuMjUgMTYuMjlRMTkuMTQgMTUuMzcgMTguNzEgMTQuOTZRMTguMjggMTQuNTUgMTcuNDUgMTQuNTVMMTcuNDUgMTQuNTVRMTYuNDggMTQuNTUgMTUuOTcgMTUuMjZRMTUuNDUgMTUuOTYgMTUuNDQgMTcuMzNMMTUuNDQgMTcuMzNMMTUuNDQgMTguMDlRMTUuNDQgMTkuNDcgMTUuOTMgMjAuMjBRMTYuNDMgMjAuOTIgMTcuMzggMjAuOTJMMTcuMzggMjAuOTJRMTguMjUgMjAuOTIgMTguNjkgMjAuNTNRMTkuMTMgMjAuMTQgMTkuMjUgMTkuMjJMMTkuMjUgMTkuMjJMMjAuNzMgMTkuMjJRMjAuNjAgMjAuNTkgMTkuNzIgMjEuMzVRMTguODQgMjIuMTIgMTcuMzggMjIuMTJMMTcuMzggMjIuMTJRMTYuMzYgMjIuMTIgMTUuNTkgMjEuNjNRMTQuODEgMjEuMTUgMTQuMzkgMjAuMjZRMTMuOTcgMTkuMzcgMTMuOTUgMTguMTlaTTI0Ljc3IDE4LjAwTDI0Ljc3IDE4LjAwTDI0Ljc3IDE3LjUyUTI0Ljc3IDE2LjI4IDI1LjIxIDE1LjMyUTI1LjY1IDE0LjM3IDI2LjQ2IDEzLjg2UTI3LjI3IDEzLjM1IDI4LjMxIDEzLjM1UTI5LjM1IDEzLjM1IDMwLjE2IDEzLjg1UTMwLjk2IDE0LjM1IDMxLjQwIDE1LjI5UTMxLjg0IDE2LjIzIDMxLjg1IDE3LjQ4TDMxLjg1IDE3LjQ4TDMxLjg1IDE3Ljk2UTMxLjg1IDE5LjIxIDMxLjQxIDIwLjE2UTMwLjk4IDIxLjEwIDMwLjE4IDIxLjYxUTI5LjM3IDIyLjEyIDI4LjMyIDIyLjEyTDI4LjMyIDIyLjEyUTI3LjI4IDIyLjEyIDI2LjQ3IDIxLjYxUTI1LjY2IDIxLjEwIDI1LjIyIDIwLjE3UTI0Ljc4IDE5LjIzIDI0Ljc3IDE4LjAwWk0yNi4yNSAxNy40NkwyNi4yNSAxNy45NlEyNi4yNSAxOS4zNiAyNi44MCAyMC4xM1EyNy4zNSAyMC45MCAyOC4zMiAyMC45MEwyOC4zMiAyMC45MFEyOS4zMSAyMC45MCAyOS44NCAyMC4xNVEzMC4zNyAxOS40MCAzMC4zNyAxNy45NkwzMC4zNyAxNy45NkwzMC4zNyAxNy41MVEzMC4zNyAxNi4wOSAyOS44MyAxNS4zNFEyOS4yOSAxNC41OCAyOC4zMSAxNC41OEwyOC4zMSAxNC41OFEyNy4zNSAxNC41OCAyNi44MSAxNS4zM1EyNi4yNiAxNi4wOSAyNi4yNSAxNy40NkwyNi4yNSAxNy40NlpNMzcuODAgMjJMMzYuMzEgMjJMMzYuMzEgMTMuNDdMMzcuODAgMTMuNDdMNDEuNjEgMTkuNTRMNDEuNjEgMTMuNDdMNDMuMDggMTMuNDdMNDMuMDggMjJMNDEuNjAgMjJMMzcuODAgMTUuOTVMMzcuODAgMjJaTTQ5LjUwIDE0LjY2TDQ2Ljg3IDE0LjY2TDQ2Ljg3IDEzLjQ3TDUzLjYzIDEzLjQ3TDUzLjYzIDE0LjY2TDUwLjk3IDE0LjY2TDUwLjk3IDIyTDQ5LjUwIDIyTDQ5LjUwIDE0LjY2Wk01OC4xNyAyMkw1Ni42MyAyMkw1OS44NSAxMy40N0w2MS4xOCAxMy40N0w2NC40MSAyMkw2Mi44NiAyMkw2Mi4xNiAyMC4wMUw1OC44NiAyMC4wMUw1OC4xNyAyMlpNNjAuNTEgMTUuMjhMNTkuMjggMTguODJMNjEuNzUgMTguODJMNjAuNTEgMTUuMjhaTTY5LjkzIDIyTDY4LjQ1IDIyTDY4LjQ1IDEzLjQ3TDY5LjkzIDEzLjQ3TDY5LjkzIDIyWk03Ni4yMiAyMkw3NC43NCAyMkw3NC43NCAxMy40N0w3Ni4yMiAxMy40N0w4MC4wNCAxOS41NEw4MC4wNCAxMy40N0w4MS41MSAxMy40N0w4MS41MSAyMkw4MC4wMiAyMkw3Ni4yMiAxNS45NUw3Ni4yMiAyMlpNODUuODEgMTkuNDJMODUuODEgMTkuNDJMODcuMzAgMTkuNDJRODcuMzAgMjAuMTUgODcuNzggMjAuNTVRODguMjYgMjAuOTUgODkuMTUgMjAuOTVMODkuMTUgMjAuOTVRODkuOTMgMjAuOTUgOTAuMzIgMjAuNjNROTAuNzEgMjAuMzIgOTAuNzEgMTkuODBMOTAuNzEgMTkuODBROTAuNzEgMTkuMjQgOTAuMzEgMTguOTRRODkuOTEgMTguNjMgODguODggMTguMzJRODcuODUgMTguMDEgODcuMjQgMTcuNjNMODcuMjQgMTcuNjNRODYuMDggMTYuOTAgODYuMDggMTUuNzJMODYuMDggMTUuNzJRODYuMDggMTQuNjkgODYuOTIgMTQuMDJRODcuNzYgMTMuMzUgODkuMTAgMTMuMzVMODkuMTAgMTMuMzVRODkuOTkgMTMuMzUgOTAuNjkgMTMuNjhROTEuMzkgMTQuMDEgOTEuNzggMTQuNjFROTIuMTggMTUuMjIgOTIuMTggMTUuOTZMOTIuMTggMTUuOTZMOTAuNzEgMTUuOTZROTAuNzEgMTUuMjkgOTAuMjkgMTQuOTFRODkuODcgMTQuNTQgODkuMDkgMTQuNTRMODkuMDkgMTQuNTRRODguMzYgMTQuNTQgODcuOTYgMTQuODVRODcuNTYgMTUuMTYgODcuNTYgMTUuNzFMODcuNTYgMTUuNzFRODcuNTYgMTYuMTggODcuOTkgMTYuNTBRODguNDMgMTYuODEgODkuNDIgMTcuMTBROTAuNDIgMTcuNDAgOTEuMDIgMTcuNzhROTEuNjMgMTguMTYgOTEuOTEgMTguNjVROTIuMTkgMTkuMTMgOTIuMTkgMTkuNzlMOTIuMTkgMTkuNzlROTIuMTkgMjAuODYgOTEuMzcgMjEuNDlROTAuNTUgMjIuMTIgODkuMTUgMjIuMTJMODkuMTUgMjIuMTJRODguMjMgMjIuMTIgODcuNDUgMjEuNzdRODYuNjcgMjEuNDMgODYuMjQgMjAuODNRODUuODEgMjAuMjIgODUuODEgMTkuNDJaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEyMC44MSAyMkwxMTguNDMgMjJMMTE4LjQzIDEzLjYwTDEyMi4yNyAxMy42MFExMjMuNDEgMTMuNjAgMTI0LjI1IDEzLjk4UTEyNS4wOSAxNC4zNSAxMjUuNTUgMTUuMDZRMTI2LjAwIDE1Ljc2IDEyNi4wMCAxNi43MUwxMjYuMDAgMTYuNzFRMTI2LjAwIDE3LjY2IDEyNS41NSAxOC4zNVExMjUuMDkgMTkuMDUgMTI0LjI1IDE5LjQyUTEyMy40MSAxOS44MCAxMjIuMjcgMTkuODBMMTIyLjI3IDE5LjgwTDEyMC44MSAxOS44MEwxMjAuODEgMjJaTTEyMC44MSAxNS40N0wxMjAuODEgMTcuOTNMMTIyLjEzIDE3LjkzUTEyMi44NiAxNy45MyAxMjMuMjMgMTcuNjFRMTIzLjYwIDE3LjI5IDEyMy42MCAxNi43MUwxMjMuNjAgMTYuNzFRMTIzLjYwIDE2LjEyIDEyMy4yMyAxNS44MFExMjIuODYgMTUuNDcgMTIyLjEzIDE1LjQ3TDEyMi4xMyAxNS40N0wxMjAuODEgMTUuNDdaTTEzMy4xMyAyMkwxMzAuNzYgMjJMMTMwLjc2IDEzLjYwTDEzMy4xMyAxMy42MEwxMzMuMTMgMjJaTTE0MC42NiAyMkwxMzguMzEgMjJMMTM4LjMxIDEzLjYwTDE0MC42NiAxMy42MEwxNDAuNjYgMTcuMDlMMTQzLjkyIDEzLjYwTDE0Ni41MyAxMy42MEwxNDMuMTAgMTcuMzJMMTQ2LjcxIDIyTDE0My45NSAyMkwxNDEuNTUgMTguOTVMMTQwLjY2IDE5LjkwTDE0MC42NiAyMlpNMTUyLjI0IDIyTDE0OS44MSAyMkwxNTMuNTIgMTMuNjBMMTU1Ljg2IDEzLjYwTDE1OS41OCAyMkwxNTcuMTEgMjJMMTU2LjQ1IDIwLjM3TDE1Mi45MCAyMC4zN0wxNTIuMjQgMjJaTTE1NC42NyAxNS45M0wxNTMuNTkgMTguNjFMMTU1Ljc1IDE4LjYxTDE1NC42NyAxNS45M1pNMTYzLjMwIDE3LjgwTDE2My4zMCAxNy44MFExNjMuMzAgMTYuNTQgMTYzLjkwIDE1LjU0UTE2NC41MCAxNC41NSAxNjUuNTUgMTMuOTlRMTY2LjYwIDEzLjQzIDE2Ny45MiAxMy40M0wxNjcuOTIgMTMuNDNRMTY5LjA4IDEzLjQzIDE3MC4wMCAxMy44NFExNzAuOTIgMTQuMjUgMTcxLjU0IDE1LjAyTDE3MS41NCAxNS4wMkwxNzAuMDMgMTYuMzlRMTY5LjIxIDE1LjQwIDE2OC4wNSAxNS40MEwxNjguMDUgMTUuNDBRMTY3LjM2IDE1LjQwIDE2Ni44MyAxNS43MFExNjYuMjkgMTYgMTY2LjAwIDE2LjU0UTE2NS43MCAxNy4wOSAxNjUuNzAgMTcuODBMMTY1LjcwIDE3LjgwUTE2NS43MCAxOC41MSAxNjYuMDAgMTkuMDVRMTY2LjI5IDE5LjYwIDE2Ni44MyAxOS45MFExNjcuMzYgMjAuMjAgMTY4LjA1IDIwLjIwTDE2OC4wNSAyMC4yMFExNjkuMjEgMjAuMjAgMTcwLjAzIDE5LjIyTDE3MC4wMyAxOS4yMkwxNzEuNTQgMjAuNThRMTcwLjkzIDIxLjM1IDE3MC4wMCAyMS43NlExNjkuMDggMjIuMTcgMTY3LjkyIDIyLjE3TDE2Ny45MiAyMi4xN1ExNjYuNjAgMjIuMTcgMTY1LjU1IDIxLjYxUTE2NC41MCAyMS4wNSAxNjMuOTAgMjAuMDVRMTYzLjMwIDE5LjA2IDE2My4zMCAxNy44MFpNMTc4LjQ1IDIyTDE3Ni4wNyAyMkwxNzYuMDcgMTMuNjBMMTc4LjQ1IDEzLjYwTDE3OC40NSAxNi43NkwxODEuNjkgMTYuNzZMMTgxLjY5IDEzLjYwTDE4NC4wNiAxMy42MEwxODQuMDYgMjJMMTgxLjY5IDIyTDE4MS42OSAxOC43MkwxNzguNDUgMTguNzJMMTc4LjQ1IDIyWk0xODkuMTYgMTguMjZMMTg5LjE2IDE4LjI2TDE4OS4xNiAxMy42MEwxOTEuNTQgMTMuNjBMMTkxLjU0IDE4LjE5UTE5MS41NCAyMC4yMCAxOTMuMTMgMjAuMjBMMTkzLjEzIDIwLjIwUTE5NC43MSAyMC4yMCAxOTQuNzEgMTguMTlMMTk0LjcxIDE4LjE5TDE5NC43MSAxMy42MEwxOTcuMDUgMTMuNjBMMTk3LjA1IDE4LjI2UTE5Ny4wNSAyMC4xMyAxOTYuMDEgMjEuMTVRMTk0Ljk3IDIyLjE3IDE5My4xMSAyMi4xN0wxOTMuMTEgMjIuMTdRMTkxLjIzIDIyLjE3IDE5MC4xOSAyMS4xNVExODkuMTYgMjAuMTMgMTg5LjE2IDE4LjI2WiIgZmlsbD0iI0ZGRkZGRiIgeD0iMTE3LjI0Ii8+PC9zdmc+)](https://forthebadge.com)
 
 [Let's Play!](https://luiscaboc.github.io/luiscabocastro-PokemonRush/)
 
-[![Image from Gyazo](https://i.gyazo.com/d3800f34a103aebf537c514bbd5bc39f.gif)](https://gyazo.com/d3800f34a103aebf537c514bbd5bc39f)
-
+[![Image from Gyazo](https://i.gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da.gif)](https://gyazo.com/69224c12e0ed0e5d750f86e30d0ec2da)
 # Index
 
 1. [Descripción del juego](#descripción-del-juego)
    1. Objetivo del juego
    2. Información del juego
    3. Instrucciones
-2. [Proyecto y motivación](#proyecto-y-motivación)
-3. [Estructura del proyecto](#estructura-del-proyecto)
-4. [Tecnologías empleadas](#tecnologias-empleadas)
-5. [Instalación](#manual-de-instalación-y-deployment)
-   1. Instalación
-   2. Deploy
-6. Variables globales
+2. [Tecnologías empleadas](#tecnologias-empleadas)
+3. [Proyecto y motivación](#proyecto-y-motivación)
+4. [Estructura del proyecto](#estructura-del-proyecto)
+5. [Instalación](#manual-de-instalación)
+6. [Ejemplos de código](#ejemplos-de-código)
 7. [Agradecimientos](#agradecimientos)
 8. [Licencias](#licencias)
 
@@ -103,7 +98,7 @@ El proyecto está en proceso de completar las últimas funcionalidades ya que pa
 - [ ] Pikachu en posición inicial cuando colisiona con Ekans
 
 
-## Estructura del proyecto
+# Estructura del proyecto
 
 ```
 ├───📁 docs/
@@ -145,23 +140,7 @@ El proyecto está en proceso de completar las últimas funcionalidades ya que pa
 
 ```
 
-## Uso de sprites para la representación del juego:
-
-- Sprites de actores principales:
-
-| Pikachu                                 | Ekans                                    |
-| --------------------------------------- | ---------------------------------------- |
-| ![avatar](./src/assets/pikasprites.png) | ![avatar](./src/assets/ekansSprites.png) |
-
-## Mapa
-
-Para el mapa he usado Photoshop para poder crear un mapa único y original.
-
-![avatar](./src/assets/MapaJuegoPokemon.png)
-
-
-
-# Manual de instalación y deployment
+# Manual de Instalación
 
 ## Instalación
 
@@ -200,7 +179,7 @@ Para descargarnos el juego, instalarlo, debemos ejecutar los siguientes comandos
  npm run start
 ```
 
-### Building
+## Building
 
 - Comando para compilar el juego
 
@@ -208,29 +187,156 @@ Para descargarnos el juego, instalarlo, debemos ejecutar los siguientes comandos
  npm run build
 ```
 
-## Ejemplos de código
+# Ejemplos de código
 
--- Actores:
+Sprites
 
-- Baya
-- Pikachu
-- Ekans
+```json
+import { Actor } from './Actor';
+import { Point } from '../types/Point';
+import imagePika from "../assets/pikasprites.png";
 
--- Background:
+export class Pikachu extends Actor {
+   pikachuSize: number;
+   pikachuMove: number;
+   maxSpeed: number;
+   speed: Point;
+    imagePika: HTMLImageElement;
+   sxParameters: number[];
+   syParameters: number[];
+   timer: number;
+   xFrame: number;
+   yFrame: number;
 
--- Script
+   constructor(initialPos: Point, maxSpeed = 0) {
+     super(initialPos);
+     this.pikachuSize = 52;
+     this.pikachuMove = 30;
+     this.maxSpeed = maxSpeed;
+     this.speed = { x: maxSpeed, y: 0 };
+     this.imagePika = new Image();
+     this.imagePika.src = imagePika;
+     this.sxParameters = [0, 1, 2];
+     this.syParameters = [0, 1, 2, 3, 4];
+     this.timer = 0;
+     this.xFrame = 0;
+     this.yFrame = 0;
+   }
 
-## variables globales
+   // add delta to update
+   update(delta: number) {
+     this.pikachuMove += 0.8;
+     // speed * delta
+     let newPosX = this.position.x + this.speed.x * delta;
+     if (newPosX <= 1140 - this.pikachuSize/2  && newPosX >= this.pikachuSize/2) {
+       this.position.x = newPosX;
+     }
+     let newPosY = this.position.y + this.speed.y * delta;
+     if (newPosY <= 1380 - this.pikachuSize/2  && newPosY >= this.pikachuSize/2) {
+       this.position.y = newPosY;
+     };
+
+     this.timer += delta;
+
+     if (this.timer >= 0.08) {
+       this.xFrame = (this.xFrame + 1) % 3; //estaba antes a 6
+       this.timer = 0;
+     }
+     if (this.timer >= 0.08) {
+        this.yFrame = (this.yFrame + 1) % 4; // la he añadido yo ERROR FATAL
+        this.timer = 0;
+       
+     }
+   }
+
+   //add delta to draw
+   draw(delta: number, ctx: CanvasRenderingContext2D) {
+     let position = this.position;
+
+     let directionX = 0;
+     this.maxSpeed = 180;
+     if (this.speed.x != 0 && this.speed.x < 0) {
+       directionX = 180;
+     }
+     
+      let directionY = 0;
+      this.maxSpeed = 180;
+      if (this.speed.y != 0 && this.speed.y < 0) {
+        directionY = 180;
+      }
+
+
+     ctx.translate(position.x, position.y);
+     // Remember to paint a rectangle behind to configure your image
+     //ctx.fillRect(0, 0, this.pikachuSize, this.pikachuSize); //medidas donde empieza pikachu
+     ctx.drawImage(
+       this.imagePika,
+       30 * this.sxParameters[this.xFrame],
+       36 * this.syParameters[this.yFrame],
+       30,
+       36,
+       - this.pikachuSize /2,
+       - this.pikachuSize /2,
+       this.pikachuSize,
+       this.pikachuSize
+     );
+   }
+
+   keyboard_event_down(key: string) {
+     switch (key) {
+       case 'ArrowRight':
+         console.log('right');
+         this.speed.y = 0;
+         this.speed.x = this.maxSpeed;
+         this.yFrame = 3;
+         break;
+       case 'ArrowLeft':
+         console.log('left');
+         this.speed.y = 0;
+         this.speed.x = -this.maxSpeed;
+         this.yFrame = 1;
+         break;
+       case 'ArrowUp':
+         console.log('up');
+         this.speed.x = 0;
+         this.speed.y = -this.maxSpeed;
+         this.yFrame = 2;
+         break;
+       case 'ArrowDown':
+         console.log('down');
+         this.speed.x = 0;
+         this.speed.y = this.maxSpeed;
+         this.yFrame = 0;
+         break;
+       default:
+         console.log('not a valid key');
+         break;
+     }
+   }
+ }
+```
+
+## Uso de sprites para la representación del juego:
+
+- Sprites de actores principales:
+
+| Pikachu                                 | Ekans                                    |
+| --------------------------------------- | ---------------------------------------- |
+| ![avatar](./src/assets/pikasprites.png) | ![avatar](./src/assets/ekansSprites.png) |
+
+## Mapa
+
+Para el mapa he usado Photoshop para poder crear un mapa único y original.
+
+![avatar](./src/assets/MapaJuegoPokemon.png)
 
 
 
-## Agradecimientos
+# Agradecimientos
 
-Quedará registrado un evento durante el flujo normal del juego en el momento en que dos o más actores colisionen
+Quiero dar las gracias a [Luis Miguel Feijoo](https://github.com/luismiguelfeijoo) por toda la ayuda brindada en estas semanas tan duras y estar disponible para cualquier duda. Tampoco hubiera sido posible sin el apoyo de mis compañeros que ha hecho que los momentos mas frustrantes se volvieran más amenos.
 
 
-Emplearemos parcel como el paquete de npm que nos permitirá ejecutar el front
-Instalar npm o yarn como gestores de paquetes
 # Licencias
 
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -242,12 +348,3 @@ Instalar npm o yarn como gestores de paquetes
 
 
 
-## Syntax highighting
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```

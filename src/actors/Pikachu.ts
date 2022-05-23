@@ -121,23 +121,3 @@ export class Pikachu extends Actor {
    }
  }
 
- 
-
-
-
-
-
-
-
-
-//  const pikachu = (x: any, y: any, width: any, height: any) => {
-//   this.x = x;
-//   this.y = y;
-//   this.width = width;
-//   this.height = height;
-
-// }
-
-// pikachu.prototype.cross = function(pikachu) {
-
-// }
