@@ -10,6 +10,8 @@
 <p align="center">
     <img src="https://media1.giphy.com/media/yN8PgNoECUwPqSg4Sz/giphy.gif?cid=790b7611d16e64744ab5bfdefc94a404952fc750fd1cb0d2&rid=giphy.gif&ct=g" width="500"/>
 </p>
+
+
 ---
 
 [Let's Play!](https://luiscaboc.github.io/luiscabocastro-PokemonRush/)
