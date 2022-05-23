@@ -212,7 +212,6 @@ export class Pikachu extends Actor {
 
 ## Instalación
 
-Para descargarnos el juego, instalarlo, debemos ejecutar los siguientes comandos.
 
 - Clonamos el repositorio
 
