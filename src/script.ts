@@ -17,75 +17,44 @@ window.onload = () => {
   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   let pikachu = new Pikachu({ x: 570, y: 1290 });
 
   let ekansActors: Actor[] = [
     //puente 2
-    new Ekans({ x: 0, y: 630 }, 100, pikachu),
+    new Ekans({ x: 0, y: 630 }, -100, pikachu),
     new Ekans({ x: 900, y: 630 }, -200, pikachu),
-    //new Ekans({ x: 550, y: 630 }),
-    //new Ekans({ x: 250, y: 630 }),
+    new Ekans({ x: 550, y: 630 }, -200, pikachu),
+    new Ekans({ x: 250, y: 630 }, -200, pikachu),
 
-    //new Ekans({ x: 0, y: 690 }),
-    //new Ekans({ x: 800, y: 690 }),
-    //new Ekans({ x: 650, y: 690 }),
-    //new Ekans({ x: 300, y: 690 }),
+    new Ekans({ x: 0, y: 690 }, -100, pikachu),
+    new Ekans({ x: 800, y: 690 }, -100, pikachu),
+    new Ekans({ x: 650, y: 690 }, -200, pikachu),
+    new Ekans({ x: 300, y: 690 }, -150, pikachu),
 
-    //new Ekans({ x: 900, y: 270 }),
-    //new Ekans({ x: 400, y: 270 }),
-    //new Ekans({ x: 300, y: 270 }),
+    new Ekans({ x: 900, y: 270 }, -200, pikachu),
+    new Ekans({ x: 400, y: 270 }, -200, pikachu),
+    new Ekans({ x: 300, y: 270 }, -150, pikachu),
 
     //parte final pero camino medio
-    //new Ekans({ x: 200, y: 330 }),
-    //new Ekans({ x: 679, y: 330 }),
-    //new Ekans({ x: 1000, y: 330 }),
+    new Ekans({ x: 200, y: 330 }, -200, pikachu),
+    new Ekans({ x: 679, y: 330 }, -200, pikachu),
+    new Ekans({ x: 1000, y: 330 }, -100, pikachu),
 
-    //new Ekans({ x: 100, y: 390 }),
-    //new Ekans({ x: 578, y: 390 }),
-    //new Ekans({ x: 350, y: 390 }),
+    new Ekans({ x: 100, y: 390 }, -200, pikachu),
+    new Ekans({ x: 578, y: 390 }, -100, pikachu),
+    new Ekans({ x: 350, y: 390 }, -150, pikachu),
 
     //2
-    //new Ekans({ x: 0, y: 930 }),
-    //new Ekans({ x: 900, y: 930 }),
-    //new Ekans({ x: 550, y: 930 }),
-    //new Ekans({ x: 250, y: 930 }),
+    new Ekans({ x: 0, y: 930 }, -200, pikachu),
+    new Ekans({ x: 900, y: 930 }, -200, pikachu),
+    new Ekans({ x: 550, y: 930 }, -100, pikachu),
+    new Ekans({ x: 250, y: 930 }, -150, pikachu),
 
     //1
-    //new Ekans({ x: 0, y: 1110 }),
-    //new Ekans({ x: 700, y: 1110 }),
-    //new Ekans({ x: 450, y: 1110 }),
-    //new Ekans({ x: 200, y: 1110 }),
+    new Ekans({ x: 0, y: 1110 }, -200, pikachu),
+    new Ekans({ x: 700, y: 1110 }, -100, pikachu),
+    new Ekans({ x: 450, y: 1110 }, -150, pikachu),
+    new Ekans({ x: 200, y: 1110 }, -200, pikachu),
   ];
 
   let bayas: Baya[] = [

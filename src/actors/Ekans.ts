@@ -5,7 +5,6 @@ import { Pikachu } from './Pikachu';
 
 export class Ekans extends Actor {
   ekansSize: number;
-  ekansMove: number;
   maxSpeed: number;
   speed: Point;
   actor: Pikachu;
@@ -17,11 +16,10 @@ export class Ekans extends Actor {
   timer: number;
   xFrame: number;
 
-  constructor(initialPos: Point, maxSpeed = -200, actor: Pikachu) {
+  constructor(initialPos: Point, maxSpeed: number, actor: Pikachu) {
     super(initialPos);
     this.touched = false;
     this.ekansSize = 65;
-    this.ekansMove = 30;
     this.maxSpeed = maxSpeed;
     this.speed = { x: maxSpeed, y: 0 };
     this.imageEkans = new Image();
@@ -37,8 +35,9 @@ export class Ekans extends Actor {
     let actorPos = this.actor.position;
     let ekansPos = this.position;
     let distance = Math.sqrt(
-      Math.pow(ekansPos.x - actorPos.x, 2) + Math.pow(ekansPos.y - actorPos.y, 2));
-    this.ekansMove += 0.8;
+      Math.pow(ekansPos.x - actorPos.x, 2) +
+        Math.pow(ekansPos.y - actorPos.y, 2)
+    );
     // speed * delta
     let newPosX = this.position.x + this.speed.x * delta;
 
@@ -49,12 +48,14 @@ export class Ekans extends Actor {
     //   this.origin.x = 0 - this.ekansSize;
     // }
     // }
+
+    if (this.position.x < 0) {
+      newPosX = 1200;
+    }
     if (distance < this.ekansSize) {
       this.touched = true;
 
-    this.position.x = newPosX;
-    if (this.position.x < 0) {
-      this.position.x = 1200;
+      //console.log(this.touched)
     }
 
     this.timer += delta;
@@ -63,14 +64,10 @@ export class Ekans extends Actor {
       this.xFrame = (this.xFrame + 1) % 3;
       this.timer = 0;
     }
+    this.position.x = newPosX;
 
-  
-
-  
-        //console.log(this.touched)
-      }
-      //console.log("actor:", actorPos , "baya:", bayaPos);
-    }
+    //console.log("actor:", actorPos , "baya:", bayaPos);
+  }
 
   //this.origin.x = (this.origin.x + this.speed) % 500;
 
@@ -86,27 +83,21 @@ export class Ekans extends Actor {
     // Remember to paint a rectangle behind to configure your image
     //ctx.fillRect(0, 0, this.ekansSize, this.ekansSize); //medidas donde empieza pikachu
 
-    if (!this.touched){
-    ctx.drawImage(
-      this.imageEkans,
-      50 * this.sxParameters[this.xFrame],
-      0,
-      50,
-      50,
-      -this.ekansSize / 2,
-      -this.ekansSize / 2,
-      this.ekansSize,
-      this.ekansSize
-    );
+    if (!this.touched) {
+      ctx.drawImage(
+        this.imageEkans,
+        50 * this.sxParameters[this.xFrame],
+        0,
+        50,
+        50,
+        -this.ekansSize / 2,
+        -this.ekansSize / 2,
+        this.ekansSize,
+        this.ekansSize
+      );
     }
-
-    
   }
-
-  }
-
-
-
+}
 
 //////////////////////////////////HACER LO MISMO Q CON LAS BAYAS EL PIKACHU
 // //add delta to draw
@@ -130,4 +121,3 @@ export class Ekans extends Actor {
 //     );
 //   }
 // }
-

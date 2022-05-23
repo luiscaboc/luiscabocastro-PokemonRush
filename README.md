@@ -1,39 +1,154 @@
-# Pokemon Rush
+![avatar](./src/assets/PokemonTitle.png)
 
-## images
+---
 
-2. Marvel at its beaut
+---
 
-    ![Tux, the Linux mascot](./src/assets/PokemonTitle.png)
-
-
+[Let's Play!](https://luiscaboc.github.io/luiscabocastro-PokemonRush/)
 
 [Build Status] (processing)
 
-[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDkuNDUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyNDkuNDUgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTUuMzEiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMTMuMzEiIHk9IjAiIHdpZHRoPSIxMzYuMTQiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTUuNjkgMjJMMTQuMjIgMjJMMTQuMjIgMTMuNDdMMTYuMTQgMTMuNDdMMTguNjAgMjAuMDFMMjEuMDYgMTMuNDdMMjIuOTcgMTMuNDdMMjIuOTcgMjJMMjEuNDkgMjJMMjEuNDkgMTkuMTlMMjEuNjQgMTUuNDNMMTkuMTIgMjJMMTguMDYgMjJMMTUuNTUgMTUuNDNMMTUuNjkgMTkuMTlMMTUuNjkgMjJaTTI4LjQ5IDIyTDI2Ljk1IDIyTDMwLjE3IDEzLjQ3TDMxLjUwIDEzLjQ3TDM0LjczIDIyTDMzLjE4IDIyTDMyLjQ5IDIwLjAxTDI5LjE4IDIwLjAxTDI4LjQ5IDIyWk0zMC44MyAxNS4yOEwyOS42MCAxOC44MkwzMi4wNyAxOC44MkwzMC44MyAxNS4yOFpNNDEuMTQgMjJMMzguNjkgMjJMMzguNjkgMTMuNDdMNDEuMjEgMTMuNDdRNDIuMzQgMTMuNDcgNDMuMjEgMTMuOTdRNDQuMDkgMTQuNDggNDQuNTcgMTUuNDBRNDUuMDUgMTYuMzMgNDUuMDUgMTcuNTJMNDUuMDUgMTcuNTJMNDUuMDUgMTcuOTVRNDUuMDUgMTkuMTYgNDQuNTcgMjAuMDhRNDQuMDggMjEuMDAgNDMuMTkgMjEuNTBRNDIuMzAgMjIgNDEuMTQgMjJMNDEuMTQgMjJaTTQwLjE3IDE0LjY2TDQwLjE3IDIwLjgyTDQxLjE0IDIwLjgyUTQyLjMwIDIwLjgyIDQyLjkzIDIwLjA5UTQzLjU1IDE5LjM2IDQzLjU2IDE3Ljk5TDQzLjU2IDE3Ljk5TDQzLjU2IDE3LjUyUTQzLjU2IDE2LjEzIDQyLjk2IDE1LjQwUTQyLjM1IDE0LjY2IDQxLjIxIDE0LjY2TDQxLjIxIDE0LjY2TDQwLjE3IDE0LjY2Wk01NS4wOSAyMkw0OS41MSAyMkw0OS41MSAxMy40N0w1NS4wNSAxMy40N0w1NS4wNSAxNC42Nkw1MS4wMCAxNC42Nkw1MS4wMCAxNy4wMkw1NC41MCAxNy4wMkw1NC41MCAxOC4xOUw1MS4wMCAxOC4xOUw1MS4wMCAyMC44Mkw1NS4wOSAyMC44Mkw1NS4wOSAyMlpNNjYuNjUgMjJMNjQuNjggMTMuNDdMNjYuMTUgMTMuNDdMNjcuNDcgMTkuODhMNjkuMTAgMTMuNDdMNzAuMzQgMTMuNDdMNzEuOTYgMTkuODlMNzMuMjcgMTMuNDdMNzQuNzQgMTMuNDdMNzIuNzcgMjJMNzEuMzUgMjJMNjkuNzMgMTUuNzdMNjguMDcgMjJMNjYuNjUgMjJaTTgwLjM4IDIyTDc4LjkwIDIyTDc4LjkwIDEzLjQ3TDgwLjM4IDEzLjQ3TDgwLjM4IDIyWk04Ni44NyAxNC42Nkw4NC4yMyAxNC42Nkw4NC4yMyAxMy40N0w5MS4wMCAxMy40N0w5MS4wMCAxNC42Nkw4OC4zNCAxNC42Nkw4OC4zNCAyMkw4Ni44NyAyMkw4Ni44NyAxNC42NlpNOTYuMjQgMjJMOTQuNzUgMjJMOTQuNzUgMTMuNDdMOTYuMjQgMTMuNDdMOTYuMjQgMTcuMDJMMTAwLjA1IDE3LjAyTDEwMC4wNSAxMy40N0wxMDEuNTMgMTMuNDdMMTAxLjUzIDIyTDEwMC4wNSAyMkwxMDAuMDUgMTguMjFMOTYuMjQgMTguMjFMOTYuMjQgMjJaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEyOS4yOSAxNS40OEwxMjYuNzEgMTUuNDhMMTI2LjcxIDEzLjYwTDEzNC4yMyAxMy42MEwxMzQuMjMgMTUuNDhMMTMxLjY2IDE1LjQ4TDEzMS42NiAyMkwxMjkuMjkgMjJMMTI5LjI5IDE1LjQ4Wk0xNDAuNzMgMTguOTVMMTM3LjUyIDEzLjYwTDE0MC4wMyAxMy42MEwxNDIuMDIgMTYuOTRMMTQ0LjAyIDEzLjYwTDE0Ni4zMiAxMy42MEwxNDMuMTAgMTguOTlMMTQzLjEwIDIyTDE0MC43MyAyMkwxNDAuNzMgMTguOTVaTTE1Mi43OCAyMkwxNTAuNDAgMjJMMTUwLjQwIDEzLjYwTDE1NC4yNSAxMy42MFExNTUuMzggMTMuNjAgMTU2LjIyIDEzLjk4UTE1Ny4wNiAxNC4zNSAxNTcuNTIgMTUuMDZRMTU3Ljk4IDE1Ljc2IDE1Ny45OCAxNi43MUwxNTcuOTggMTYuNzFRMTU3Ljk4IDE3LjY2IDE1Ny41MiAxOC4zNVExNTcuMDYgMTkuMDUgMTU2LjIyIDE5LjQyUTE1NS4zOCAxOS44MCAxNTQuMjUgMTkuODBMMTU0LjI1IDE5LjgwTDE1Mi43OCAxOS44MEwxNTIuNzggMjJaTTE1Mi43OCAxNS40N0wxNTIuNzggMTcuOTNMMTU0LjEwIDE3LjkzUTE1NC44MyAxNy45MyAxNTUuMjAgMTcuNjFRMTU1LjU4IDE3LjI5IDE1NS41OCAxNi43MUwxNTUuNTggMTYuNzFRMTU1LjU4IDE2LjEyIDE1NS4yMCAxNS44MFExNTQuODMgMTUuNDcgMTU0LjEwIDE1LjQ3TDE1NC4xMCAxNS40N0wxNTIuNzggMTUuNDdaTTE2OS40NyAyMkwxNjIuNzMgMjJMMTYyLjczIDEzLjYwTDE2OS4zMiAxMy42MEwxNjkuMzIgMTUuNDRMMTY1LjA5IDE1LjQ0TDE2NS4wOSAxNi44NUwxNjguODIgMTYuODVMMTY4LjgyIDE4LjYzTDE2NS4wOSAxOC42M0wxNjUuMDkgMjAuMTdMMTY5LjQ3IDIwLjE3TDE2OS40NyAyMlpNMTczLjY5IDIxLjI0TDE3My42OSAyMS4yNEwxNzQuNDcgMTkuNDlRMTc1LjAzIDE5Ljg2IDE3NS43OCAyMC4wOVExNzYuNTIgMjAuMzIgMTc3LjI0IDIwLjMyTDE3Ny4yNCAyMC4zMlExNzguNjEgMjAuMzIgMTc4LjYyIDE5LjY0TDE3OC42MiAxOS42NFExNzguNjIgMTkuMjggMTc4LjIzIDE5LjExUTE3Ny44NCAxOC45MyAxNzYuOTcgMTguNzRMMTc2Ljk3IDE4Ljc0UTE3Ni4wMiAxOC41MyAxNzUuMzggMTguMzBRMTc0Ljc1IDE4LjA2IDE3NC4yOSAxNy41NVExNzMuODQgMTcuMDMgMTczLjg0IDE2LjE2TDE3My44NCAxNi4xNlExNzMuODQgMTUuMzkgMTc0LjI2IDE0Ljc3UTE3NC42OCAxNC4xNSAxNzUuNTEgMTMuNzlRMTc2LjM1IDEzLjQzIDE3Ny41NSAxMy40M0wxNzcuNTUgMTMuNDNRMTc4LjM4IDEzLjQzIDE3OS4xOSAxMy42MlExNzkuOTkgMTMuODAgMTgwLjYxIDE0LjE3TDE4MC42MSAxNC4xN0wxNzkuODcgMTUuOTNRMTc4LjY3IDE1LjI4IDE3Ny41NCAxNS4yOEwxNzcuNTQgMTUuMjhRMTc2LjgzIDE1LjI4IDE3Ni41MSAxNS40OVExNzYuMTkgMTUuNzAgMTc2LjE5IDE2LjA0TDE3Ni4xOSAxNi4wNFExNzYuMTkgMTYuMzcgMTc2LjU3IDE2LjU0UTE3Ni45NiAxNi43MSAxNzcuODEgMTYuODlMMTc3LjgxIDE2Ljg5UTE3OC43NyAxNy4xMCAxNzkuNDAgMTcuMzNRMTgwLjAzIDE3LjU2IDE4MC40OSAxOC4wN1ExODAuOTUgMTguNTggMTgwLjk1IDE5LjQ2TDE4MC45NSAxOS40NlExODAuOTUgMjAuMjEgMTgwLjUzIDIwLjgzUTE4MC4xMiAyMS40NCAxNzkuMjcgMjEuODBRMTc4LjQzIDIyLjE3IDE3Ny4yMyAyMi4xN0wxNzcuMjMgMjIuMTdRMTc2LjIxIDIyLjE3IDE3NS4yNSAyMS45MlExNzQuMjkgMjEuNjcgMTczLjY5IDIxLjI0Wk0xODUuMTAgMTcuODBMMTg1LjEwIDE3LjgwUTE4NS4xMCAxNi41NCAxODUuNzAgMTUuNTRRMTg2LjMwIDE0LjU1IDE4Ny4zNSAxMy45OVExODguNDAgMTMuNDMgMTg5LjcyIDEzLjQzTDE4OS43MiAxMy40M1ExOTAuODcgMTMuNDMgMTkxLjgwIDEzLjg0UTE5Mi43MiAxNC4yNSAxOTMuMzMgMTUuMDJMMTkzLjMzIDE1LjAyTDE5MS44MiAxNi4zOVExOTEuMDEgMTUuNDAgMTg5Ljg0IDE1LjQwTDE4OS44NCAxNS40MFExODkuMTYgMTUuNDAgMTg4LjYyIDE1LjcwUTE4OC4wOSAxNiAxODcuNzkgMTYuNTRRMTg3LjUwIDE3LjA5IDE4Ny41MCAxNy44MEwxODcuNTAgMTcuODBRMTg3LjUwIDE4LjUxIDE4Ny43OSAxOS4wNVExODguMDkgMTkuNjAgMTg4LjYyIDE5LjkwUTE4OS4xNiAyMC4yMCAxODkuODQgMjAuMjBMMTg5Ljg0IDIwLjIwUTE5MS4wMSAyMC4yMCAxOTEuODIgMTkuMjJMMTkxLjgyIDE5LjIyTDE5My4zMyAyMC41OFExOTIuNzIgMjEuMzUgMTkxLjgwIDIxLjc2UTE5MC44NyAyMi4xNyAxODkuNzIgMjIuMTdMMTg5LjcyIDIyLjE3UTE4OC40MCAyMi4xNyAxODcuMzUgMjEuNjFRMTg2LjMwIDIxLjA1IDE4NS43MCAyMC4wNVExODUuMTAgMTkuMDYgMTg1LjEwIDE3LjgwWk0yMDAuMjUgMjJMMTk3Ljg3IDIyTDE5Ny44NyAxMy42MEwyMDEuNzEgMTMuNjBRMjAyLjg2IDEzLjYwIDIwMy42OSAxMy45OFEyMDQuNTMgMTQuMzUgMjA0Ljk5IDE1LjA2UTIwNS40NSAxNS43NiAyMDUuNDUgMTYuNzFMMjA1LjQ1IDE2LjcxUTIwNS40NSAxNy42MiAyMDUuMDIgMTguMzBRMjA0LjU5IDE4Ljk4IDIwMy44MCAxOS4zNkwyMDMuODAgMTkuMzZMMjA1LjYxIDIyTDIwMy4wNyAyMkwyMDEuNTQgMTkuNzdMMjAwLjI1IDE5Ljc3TDIwMC4yNSAyMlpNMjAwLjI1IDE1LjQ3TDIwMC4yNSAxNy45M0wyMDEuNTcgMTcuOTNRMjAyLjMwIDE3LjkzIDIwMi42NyAxNy42MVEyMDMuMDQgMTcuMjkgMjAzLjA0IDE2LjcxTDIwMy4wNCAxNi43MVEyMDMuMDQgMTYuMTIgMjAyLjY3IDE1Ljc5UTIwMi4zMCAxNS40NyAyMDEuNTcgMTUuNDdMMjAxLjU3IDE1LjQ3TDIwMC4yNSAxNS40N1pNMjEyLjYxIDIyTDIxMC4yMyAyMkwyMTAuMjMgMTMuNjBMMjEyLjYxIDEzLjYwTDIxMi42MSAyMlpNMjIwLjE2IDIyTDIxNy43OCAyMkwyMTcuNzggMTMuNjBMMjIxLjYzIDEzLjYwUTIyMi43NyAxMy42MCAyMjMuNjEgMTMuOThRMjI0LjQ1IDE0LjM1IDIyNC45MCAxNS4wNlEyMjUuMzYgMTUuNzYgMjI1LjM2IDE2LjcxTDIyNS4zNiAxNi43MVEyMjUuMzYgMTcuNjYgMjI0LjkwIDE4LjM1UTIyNC40NSAxOS4wNSAyMjMuNjEgMTkuNDJRMjIyLjc3IDE5LjgwIDIyMS42MyAxOS44MEwyMjEuNjMgMTkuODBMMjIwLjE2IDE5LjgwTDIyMC4xNiAyMlpNMjIwLjE2IDE1LjQ3TDIyMC4xNiAxNy45M0wyMjEuNDggMTcuOTNRMjIyLjIxIDE3LjkzIDIyMi41OSAxNy42MVEyMjIuOTYgMTcuMjkgMjIyLjk2IDE2LjcxTDIyMi45NiAxNi43MVEyMjIuOTYgMTYuMTIgMjIyLjU5IDE1LjgwUTIyMi4yMSAxNS40NyAyMjEuNDggMTUuNDdMMjIxLjQ4IDE1LjQ3TDIyMC4xNiAxNS40N1pNMjMxLjkxIDE1LjQ4TDIyOS4zMiAxNS40OEwyMjkuMzIgMTMuNjBMMjM2Ljg1IDEzLjYwTDIzNi44NSAxNS40OEwyMzQuMjggMTUuNDhMMjM0LjI4IDIyTDIzMS45MSAyMkwyMzEuOTEgMTUuNDhaIiBmaWxsPSIjRkZGRkZGIiB4PSIxMjYuMzEiLz48L3N2Zz4=)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
 
 
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com) [![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDguODYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDguODYgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDYuMjQiIGhlaWdodD0iMzUiIGZpbGw9IiNERkYzMzEiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMDQuMjQiIHk9IjAiIHdpZHRoPSIxMDQuNjIiIGhlaWdodD0iMzUiIGZpbGw9IiNGQ0ZENkQiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTMuOTUgMTguMTlMMTMuOTUgMTguMTlMMTMuOTUgMTcuMzlRMTMuOTUgMTYuMTkgMTQuMzggMTUuMjdRMTQuODAgMTQuMzUgMTUuNjAgMTMuODVRMTYuNDAgMTMuMzUgMTcuNDUgMTMuMzVMMTcuNDUgMTMuMzVRMTguODYgMTMuMzUgMTkuNzMgMTQuMTJRMjAuNTkgMTQuODkgMjAuNzMgMTYuMjlMMjAuNzMgMTYuMjlMMTkuMjUgMTYuMjlRMTkuMTQgMTUuMzcgMTguNzEgMTQuOTZRMTguMjggMTQuNTUgMTcuNDUgMTQuNTVMMTcuNDUgMTQuNTVRMTYuNDggMTQuNTUgMTUuOTcgMTUuMjZRMTUuNDUgMTUuOTYgMTUuNDQgMTcuMzNMMTUuNDQgMTcuMzNMMTUuNDQgMTguMDlRMTUuNDQgMTkuNDcgMTUuOTMgMjAuMjBRMTYuNDMgMjAuOTIgMTcuMzggMjAuOTJMMTcuMzggMjAuOTJRMTguMjUgMjAuOTIgMTguNjkgMjAuNTNRMTkuMTMgMjAuMTQgMTkuMjUgMTkuMjJMMTkuMjUgMTkuMjJMMjAuNzMgMTkuMjJRMjAuNjAgMjAuNTkgMTkuNzIgMjEuMzVRMTguODQgMjIuMTIgMTcuMzggMjIuMTJMMTcuMzggMjIuMTJRMTYuMzYgMjIuMTIgMTUuNTkgMjEuNjNRMTQuODEgMjEuMTUgMTQuMzkgMjAuMjZRMTMuOTcgMTkuMzcgMTMuOTUgMTguMTlaTTI0Ljc3IDE4LjAwTDI0Ljc3IDE4LjAwTDI0Ljc3IDE3LjUyUTI0Ljc3IDE2LjI4IDI1LjIxIDE1LjMyUTI1LjY1IDE0LjM3IDI2LjQ2IDEzLjg2UTI3LjI3IDEzLjM1IDI4LjMxIDEzLjM1UTI5LjM1IDEzLjM1IDMwLjE2IDEzLjg1UTMwLjk2IDE0LjM1IDMxLjQwIDE1LjI5UTMxLjg0IDE2LjIzIDMxLjg1IDE3LjQ4TDMxLjg1IDE3LjQ4TDMxLjg1IDE3Ljk2UTMxLjg1IDE5LjIxIDMxLjQxIDIwLjE2UTMwLjk4IDIxLjEwIDMwLjE4IDIxLjYxUTI5LjM3IDIyLjEyIDI4LjMyIDIyLjEyTDI4LjMyIDIyLjEyUTI3LjI4IDIyLjEyIDI2LjQ3IDIxLjYxUTI1LjY2IDIxLjEwIDI1LjIyIDIwLjE3UTI0Ljc4IDE5LjIzIDI0Ljc3IDE4LjAwWk0yNi4yNSAxNy40NkwyNi4yNSAxNy45NlEyNi4yNSAxOS4zNiAyNi44MCAyMC4xM1EyNy4zNSAyMC45MCAyOC4zMiAyMC45MEwyOC4zMiAyMC45MFEyOS4zMSAyMC45MCAyOS44NCAyMC4xNVEzMC4zNyAxOS40MCAzMC4zNyAxNy45NkwzMC4zNyAxNy45NkwzMC4zNyAxNy41MVEzMC4zNyAxNi4wOSAyOS44MyAxNS4zNFEyOS4yOSAxNC41OCAyOC4zMSAxNC41OEwyOC4zMSAxNC41OFEyNy4zNSAxNC41OCAyNi44MSAxNS4zM1EyNi4yNiAxNi4wOSAyNi4yNSAxNy40NkwyNi4yNSAxNy40NlpNMzcuODAgMjJMMzYuMzEgMjJMMzYuMzEgMTMuNDdMMzcuODAgMTMuNDdMNDEuNjEgMTkuNTRMNDEuNjEgMTMuNDdMNDMuMDggMTMuNDdMNDMuMDggMjJMNDEuNjAgMjJMMzcuODAgMTUuOTVMMzcuODAgMjJaTTQ5LjUwIDE0LjY2TDQ2Ljg3IDE0LjY2TDQ2Ljg3IDEzLjQ3TDUzLjYzIDEzLjQ3TDUzLjYzIDE0LjY2TDUwLjk3IDE0LjY2TDUwLjk3IDIyTDQ5LjUwIDIyTDQ5LjUwIDE0LjY2Wk01OC4xNyAyMkw1Ni42MyAyMkw1OS44NSAxMy40N0w2MS4xOCAxMy40N0w2NC40MSAyMkw2Mi44NiAyMkw2Mi4xNiAyMC4wMUw1OC44NiAyMC4wMUw1OC4xNyAyMlpNNjAuNTEgMTUuMjhMNTkuMjggMTguODJMNjEuNzUgMTguODJMNjAuNTEgMTUuMjhaTTY5LjkzIDIyTDY4LjQ1IDIyTDY4LjQ1IDEzLjQ3TDY5LjkzIDEzLjQ3TDY5LjkzIDIyWk03Ni4yMiAyMkw3NC43NCAyMkw3NC43NCAxMy40N0w3Ni4yMiAxMy40N0w4MC4wNCAxOS41NEw4MC4wNCAxMy40N0w4MS41MSAxMy40N0w4MS41MSAyMkw4MC4wMiAyMkw3Ni4yMiAxNS45NUw3Ni4yMiAyMlpNODUuODEgMTkuNDJMODUuODEgMTkuNDJMODcuMzAgMTkuNDJRODcuMzAgMjAuMTUgODcuNzggMjAuNTVRODguMjYgMjAuOTUgODkuMTUgMjAuOTVMODkuMTUgMjAuOTVRODkuOTMgMjAuOTUgOTAuMzIgMjAuNjNROTAuNzEgMjAuMzIgOTAuNzEgMTkuODBMOTAuNzEgMTkuODBROTAuNzEgMTkuMjQgOTAuMzEgMTguOTRRODkuOTEgMTguNjMgODguODggMTguMzJRODcuODUgMTguMDEgODcuMjQgMTcuNjNMODcuMjQgMTcuNjNRODYuMDggMTYuOTAgODYuMDggMTUuNzJMODYuMDggMTUuNzJRODYuMDggMTQuNjkgODYuOTIgMTQuMDJRODcuNzYgMTMuMzUgODkuMTAgMTMuMzVMODkuMTAgMTMuMzVRODkuOTkgMTMuMzUgOTAuNjkgMTMuNjhROTEuMzkgMTQuMDEgOTEuNzggMTQuNjFROTIuMTggMTUuMjIgOTIuMTggMTUuOTZMOTIuMTggMTUuOTZMOTAuNzEgMTUuOTZROTAuNzEgMTUuMjkgOTAuMjkgMTQuOTFRODkuODcgMTQuNTQgODkuMDkgMTQuNTRMODkuMDkgMTQuNTRRODguMzYgMTQuNTQgODcuOTYgMTQuODVRODcuNTYgMTUuMTYgODcuNTYgMTUuNzFMODcuNTYgMTUuNzFRODcuNTYgMTYuMTggODcuOTkgMTYuNTBRODguNDMgMTYuODEgODkuNDIgMTcuMTBROTAuNDIgMTcuNDAgOTEuMDIgMTcuNzhROTEuNjMgMTguMTYgOTEuOTEgMTguNjVROTIuMTkgMTkuMTMgOTIuMTkgMTkuNzlMOTIuMTkgMTkuNzlROTIuMTkgMjAuODYgOTEuMzcgMjEuNDlROTAuNTUgMjIuMTIgODkuMTUgMjIuMTJMODkuMTUgMjIuMTJRODguMjMgMjIuMTIgODcuNDUgMjEuNzdRODYuNjcgMjEuNDMgODYuMjQgMjAuODNRODUuODEgMjAuMjIgODUuODEgMTkuNDJaIiBmaWxsPSIjMDAwMDAwIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEyMC44MSAyMkwxMTguNDMgMjJMMTE4LjQzIDEzLjYwTDEyMi4yNyAxMy42MFExMjMuNDEgMTMuNjAgMTI0LjI1IDEzLjk4UTEyNS4wOSAxNC4zNSAxMjUuNTUgMTUuMDZRMTI2LjAwIDE1Ljc2IDEyNi4wMCAxNi43MUwxMjYuMDAgMTYuNzFRMTI2LjAwIDE3LjY2IDEyNS41NSAxOC4zNVExMjUuMDkgMTkuMDUgMTI0LjI1IDE5LjQyUTEyMy40MSAxOS44MCAxMjIuMjcgMTkuODBMMTIyLjI3IDE5LjgwTDEyMC44MSAxOS44MEwxMjAuODEgMjJaTTEyMC44MSAxNS40N0wxMjAuODEgMTcuOTNMMTIyLjEzIDE3LjkzUTEyMi44NiAxNy45MyAxMjMuMjMgMTcuNjFRMTIzLjYwIDE3LjI5IDEyMy42MCAxNi43MUwxMjMuNjAgMTYuNzFRMTIzLjYwIDE2LjEyIDEyMy4yMyAxNS44MFExMjIuODYgMTUuNDcgMTIyLjEzIDE1LjQ3TDEyMi4xMyAxNS40N0wxMjAuODEgMTUuNDdaTTEzMy4xMyAyMkwxMzAuNzYgMjJMMTMwLjc2IDEzLjYwTDEzMy4xMyAxMy42MEwxMzMuMTMgMjJaTTE0MC42NiAyMkwxMzguMzEgMjJMMTM4LjMxIDEzLjYwTDE0MC42NiAxMy42MEwxNDAuNjYgMTcuMDlMMTQzLjkyIDEzLjYwTDE0Ni41MyAxMy42MEwxNDMuMTAgMTcuMzJMMTQ2LjcxIDIyTDE0My45NSAyMkwxNDEuNTUgMTguOTVMMTQwLjY2IDE5LjkwTDE0MC42NiAyMlpNMTUyLjI0IDIyTDE0OS44MSAyMkwxNTMuNTIgMTMuNjBMMTU1Ljg2IDEzLjYwTDE1OS41OCAyMkwxNTcuMTEgMjJMMTU2LjQ1IDIwLjM3TDE1Mi45MCAyMC4zN0wxNTIuMjQgMjJaTTE1NC42NyAxNS45M0wxNTMuNTkgMTguNjFMMTU1Ljc1IDE4LjYxTDE1NC42NyAxNS45M1pNMTYzLjMwIDE3LjgwTDE2My4zMCAxNy44MFExNjMuMzAgMTYuNTQgMTYzLjkwIDE1LjU0UTE2NC41MCAxNC41NSAxNjUuNTUgMTMuOTlRMTY2LjYwIDEzLjQzIDE2Ny45MiAxMy40M0wxNjcuOTIgMTMuNDNRMTY5LjA4IDEzLjQzIDE3MC4wMCAxMy44NFExNzAuOTIgMTQuMjUgMTcxLjU0IDE1LjAyTDE3MS41NCAxNS4wMkwxNzAuMDMgMTYuMzlRMTY5LjIxIDE1LjQwIDE2OC4wNSAxNS40MEwxNjguMDUgMTUuNDBRMTY3LjM2IDE1LjQwIDE2Ni44MyAxNS43MFExNjYuMjkgMTYgMTY2LjAwIDE2LjU0UTE2NS43MCAxNy4wOSAxNjUuNzAgMTcuODBMMTY1LjcwIDE3LjgwUTE2NS43MCAxOC41MSAxNjYuMDAgMTkuMDVRMTY2LjI5IDE5LjYwIDE2Ni44MyAxOS45MFExNjcuMzYgMjAuMjAgMTY4LjA1IDIwLjIwTDE2OC4wNSAyMC4yMFExNjkuMjEgMjAuMjAgMTcwLjAzIDE5LjIyTDE3MC4wMyAxOS4yMkwxNzEuNTQgMjAuNThRMTcwLjkzIDIxLjM1IDE3MC4wMCAyMS43NlExNjkuMDggMjIuMTcgMTY3LjkyIDIyLjE3TDE2Ny45MiAyMi4xN1ExNjYuNjAgMjIuMTcgMTY1LjU1IDIxLjYxUTE2NC41MCAyMS4wNSAxNjMuOTAgMjAuMDVRMTYzLjMwIDE5LjA2IDE2My4zMCAxNy44MFpNMTc4LjQ1IDIyTDE3Ni4wNyAyMkwxNzYuMDcgMTMuNjBMMTc4LjQ1IDEzLjYwTDE3OC40NSAxNi43NkwxODEuNjkgMTYuNzZMMTgxLjY5IDEzLjYwTDE4NC4wNiAxMy42MEwxODQuMDYgMjJMMTgxLjY5IDIyTDE4MS42OSAxOC43MkwxNzguNDUgMTguNzJMMTc4LjQ1IDIyWk0xODkuMTYgMTguMjZMMTg5LjE2IDE4LjI2TDE4OS4xNiAxMy42MEwxOTEuNTQgMTMuNjBMMTkxLjU0IDE4LjE5UTE5MS41NCAyMC4yMCAxOTMuMTMgMjAuMjBMMTkzLjEzIDIwLjIwUTE5NC43MSAyMC4yMCAxOTQuNzEgMTguMTlMMTk0LjcxIDE4LjE5TDE5NC43MSAxMy42MEwxOTcuMDUgMTMuNjBMMTk3LjA1IDE4LjI2UTE5Ny4wNSAyMC4xMyAxOTYuMDEgMjEuMTVRMTk0Ljk3IDIyLjE3IDE5My4xMSAyMi4xN0wxOTMuMTEgMjIuMTdRMTkxLjIzIDIyLjE3IDE5MC4xOSAyMS4xNVExODkuMTYgMjAuMTMgMTg5LjE2IDE4LjI2WiIgZmlsbD0iIzAwMDAwMCIgeD0iMTE3LjI0Ii8+PC9zdmc+)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com) [![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDguODYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMDguODYgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDYuMjQiIGhlaWdodD0iMzUiIGZpbGw9IiMzMUM0RjMiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMDQuMjQiIHk9IjAiIHdpZHRoPSIxMDQuNjIiIGhlaWdodD0iMzUiIGZpbGw9IiMzODlBRDUiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTMuOTUgMTguMTlMMTMuOTUgMTguMTlMMTMuOTUgMTcuMzlRMTMuOTUgMTYuMTkgMTQuMzggMTUuMjdRMTQuODAgMTQuMzUgMTUuNjAgMTMuODVRMTYuNDAgMTMuMzUgMTcuNDUgMTMuMzVMMTcuNDUgMTMuMzVRMTguODYgMTMuMzUgMTkuNzMgMTQuMTJRMjAuNTkgMTQuODkgMjAuNzMgMTYuMjlMMjAuNzMgMTYuMjlMMTkuMjUgMTYuMjlRMTkuMTQgMTUuMzcgMTguNzEgMTQuOTZRMTguMjggMTQuNTUgMTcuNDUgMTQuNTVMMTcuNDUgMTQuNTVRMTYuNDggMTQuNTUgMTUuOTcgMTUuMjZRMTUuNDUgMTUuOTYgMTUuNDQgMTcuMzNMMTUuNDQgMTcuMzNMMTUuNDQgMTguMDlRMTUuNDQgMTkuNDcgMTUuOTMgMjAuMjBRMTYuNDMgMjAuOTIgMTcuMzggMjAuOTJMMTcuMzggMjAuOTJRMTguMjUgMjAuOTIgMTguNjkgMjAuNTNRMTkuMTMgMjAuMTQgMTkuMjUgMTkuMjJMMTkuMjUgMTkuMjJMMjAuNzMgMTkuMjJRMjAuNjAgMjAuNTkgMTkuNzIgMjEuMzVRMTguODQgMjIuMTIgMTcuMzggMjIuMTJMMTcuMzggMjIuMTJRMTYuMzYgMjIuMTIgMTUuNTkgMjEuNjNRMTQuODEgMjEuMTUgMTQuMzkgMjAuMjZRMTMuOTcgMTkuMzcgMTMuOTUgMTguMTlaTTI0Ljc3IDE4LjAwTDI0Ljc3IDE4LjAwTDI0Ljc3IDE3LjUyUTI0Ljc3IDE2LjI4IDI1LjIxIDE1LjMyUTI1LjY1IDE0LjM3IDI2LjQ2IDEzLjg2UTI3LjI3IDEzLjM1IDI4LjMxIDEzLjM1UTI5LjM1IDEzLjM1IDMwLjE2IDEzLjg1UTMwLjk2IDE0LjM1IDMxLjQwIDE1LjI5UTMxLjg0IDE2LjIzIDMxLjg1IDE3LjQ4TDMxLjg1IDE3LjQ4TDMxLjg1IDE3Ljk2UTMxLjg1IDE5LjIxIDMxLjQxIDIwLjE2UTMwLjk4IDIxLjEwIDMwLjE4IDIxLjYxUTI5LjM3IDIyLjEyIDI4LjMyIDIyLjEyTDI4LjMyIDIyLjEyUTI3LjI4IDIyLjEyIDI2LjQ3IDIxLjYxUTI1LjY2IDIxLjEwIDI1LjIyIDIwLjE3UTI0Ljc4IDE5LjIzIDI0Ljc3IDE4LjAwWk0yNi4yNSAxNy40NkwyNi4yNSAxNy45NlEyNi4yNSAxOS4zNiAyNi44MCAyMC4xM1EyNy4zNSAyMC45MCAyOC4zMiAyMC45MEwyOC4zMiAyMC45MFEyOS4zMSAyMC45MCAyOS44NCAyMC4xNVEzMC4zNyAxOS40MCAzMC4zNyAxNy45NkwzMC4zNyAxNy45NkwzMC4zNyAxNy41MVEzMC4zNyAxNi4wOSAyOS44MyAxNS4zNFEyOS4yOSAxNC41OCAyOC4zMSAxNC41OEwyOC4zMSAxNC41OFEyNy4zNSAxNC41OCAyNi44MSAxNS4zM1EyNi4yNiAxNi4wOSAyNi4yNSAxNy40NkwyNi4yNSAxNy40NlpNMzcuODAgMjJMMzYuMzEgMjJMMzYuMzEgMTMuNDdMMzcuODAgMTMuNDdMNDEuNjEgMTkuNTRMNDEuNjEgMTMuNDdMNDMuMDggMTMuNDdMNDMuMDggMjJMNDEuNjAgMjJMMzcuODAgMTUuOTVMMzcuODAgMjJaTTQ5LjUwIDE0LjY2TDQ2Ljg3IDE0LjY2TDQ2Ljg3IDEzLjQ3TDUzLjYzIDEzLjQ3TDUzLjYzIDE0LjY2TDUwLjk3IDE0LjY2TDUwLjk3IDIyTDQ5LjUwIDIyTDQ5LjUwIDE0LjY2Wk01OC4xNyAyMkw1Ni42MyAyMkw1OS44NSAxMy40N0w2MS4xOCAxMy40N0w2NC40MSAyMkw2Mi44NiAyMkw2Mi4xNiAyMC4wMUw1OC44NiAyMC4wMUw1OC4xNyAyMlpNNjAuNTEgMTUuMjhMNTkuMjggMTguODJMNjEuNzUgMTguODJMNjAuNTEgMTUuMjhaTTY5LjkzIDIyTDY4LjQ1IDIyTDY4LjQ1IDEzLjQ3TDY5LjkzIDEzLjQ3TDY5LjkzIDIyWk03Ni4yMiAyMkw3NC43NCAyMkw3NC43NCAxMy40N0w3Ni4yMiAxMy40N0w4MC4wNCAxOS41NEw4MC4wNCAxMy40N0w4MS41MSAxMy40N0w4MS41MSAyMkw4MC4wMiAyMkw3Ni4yMiAxNS45NUw3Ni4yMiAyMlpNODUuODEgMTkuNDJMODUuODEgMTkuNDJMODcuMzAgMTkuNDJRODcuMzAgMjAuMTUgODcuNzggMjAuNTVRODguMjYgMjAuOTUgODkuMTUgMjAuOTVMODkuMTUgMjAuOTVRODkuOTMgMjAuOTUgOTAuMzIgMjAuNjNROTAuNzEgMjAuMzIgOTAuNzEgMTkuODBMOTAuNzEgMTkuODBROTAuNzEgMTkuMjQgOTAuMzEgMTguOTRRODkuOTEgMTguNjMgODguODggMTguMzJRODcuODUgMTguMDEgODcuMjQgMTcuNjNMODcuMjQgMTcuNjNRODYuMDggMTYuOTAgODYuMDggMTUuNzJMODYuMDggMTUuNzJRODYuMDggMTQuNjkgODYuOTIgMTQuMDJRODcuNzYgMTMuMzUgODkuMTAgMTMuMzVMODkuMTAgMTMuMzVRODkuOTkgMTMuMzUgOTAuNjkgMTMuNjhROTEuMzkgMTQuMDEgOTEuNzggMTQuNjFROTIuMTggMTUuMjIgOTIuMTggMTUuOTZMOTIuMTggMTUuOTZMOTAuNzEgMTUuOTZROTAuNzEgMTUuMjkgOTAuMjkgMTQuOTFRODkuODcgMTQuNTQgODkuMDkgMTQuNTRMODkuMDkgMTQuNTRRODguMzYgMTQuNTQgODcuOTYgMTQuODVRODcuNTYgMTUuMTYgODcuNTYgMTUuNzFMODcuNTYgMTUuNzFRODcuNTYgMTYuMTggODcuOTkgMTYuNTBRODguNDMgMTYuODEgODkuNDIgMTcuMTBROTAuNDIgMTcuNDAgOTEuMDIgMTcuNzhROTEuNjMgMTguMTYgOTEuOTEgMTguNjVROTIuMTkgMTkuMTMgOTIuMTkgMTkuNzlMOTIuMTkgMTkuNzlROTIuMTkgMjAuODYgOTEuMzcgMjEuNDlROTAuNTUgMjIuMTIgODkuMTUgMjIuMTJMODkuMTUgMjIuMTJRODguMjMgMjIuMTIgODcuNDUgMjEuNzdRODYuNjcgMjEuNDMgODYuMjQgMjAuODNRODUuODEgMjAuMjIgODUuODEgMTkuNDJaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEyMC44MSAyMkwxMTguNDMgMjJMMTE4LjQzIDEzLjYwTDEyMi4yNyAxMy42MFExMjMuNDEgMTMuNjAgMTI0LjI1IDEzLjk4UTEyNS4wOSAxNC4zNSAxMjUuNTUgMTUuMDZRMTI2LjAwIDE1Ljc2IDEyNi4wMCAxNi43MUwxMjYuMDAgMTYuNzFRMTI2LjAwIDE3LjY2IDEyNS41NSAxOC4zNVExMjUuMDkgMTkuMDUgMTI0LjI1IDE5LjQyUTEyMy40MSAxOS44MCAxMjIuMjcgMTkuODBMMTIyLjI3IDE5LjgwTDEyMC44MSAxOS44MEwxMjAuODEgMjJaTTEyMC44MSAxNS40N0wxMjAuODEgMTcuOTNMMTIyLjEzIDE3LjkzUTEyMi44NiAxNy45MyAxMjMuMjMgMTcuNjFRMTIzLjYwIDE3LjI5IDEyMy42MCAxNi43MUwxMjMuNjAgMTYuNzFRMTIzLjYwIDE2LjEyIDEyMy4yMyAxNS44MFExMjIuODYgMTUuNDcgMTIyLjEzIDE1LjQ3TDEyMi4xMyAxNS40N0wxMjAuODEgMTUuNDdaTTEzMy4xMyAyMkwxMzAuNzYgMjJMMTMwLjc2IDEzLjYwTDEzMy4xMyAxMy42MEwxMzMuMTMgMjJaTTE0MC42NiAyMkwxMzguMzEgMjJMMTM4LjMxIDEzLjYwTDE0MC42NiAxMy42MEwxNDAuNjYgMTcuMDlMMTQzLjkyIDEzLjYwTDE0Ni41MyAxMy42MEwxNDMuMTAgMTcuMzJMMTQ2LjcxIDIyTDE0My45NSAyMkwxNDEuNTUgMTguOTVMMTQwLjY2IDE5LjkwTDE0MC42NiAyMlpNMTUyLjI0IDIyTDE0OS44MSAyMkwxNTMuNTIgMTMuNjBMMTU1Ljg2IDEzLjYwTDE1OS41OCAyMkwxNTcuMTEgMjJMMTU2LjQ1IDIwLjM3TDE1Mi45MCAyMC4zN0wxNTIuMjQgMjJaTTE1NC42NyAxNS45M0wxNTMuNTkgMTguNjFMMTU1Ljc1IDE4LjYxTDE1NC42NyAxNS45M1pNMTYzLjMwIDE3LjgwTDE2My4zMCAxNy44MFExNjMuMzAgMTYuNTQgMTYzLjkwIDE1LjU0UTE2NC41MCAxNC41NSAxNjUuNTUgMTMuOTlRMTY2LjYwIDEzLjQzIDE2Ny45MiAxMy40M0wxNjcuOTIgMTMuNDNRMTY5LjA4IDEzLjQzIDE3MC4wMCAxMy44NFExNzAuOTIgMTQuMjUgMTcxLjU0IDE1LjAyTDE3MS41NCAxNS4wMkwxNzAuMDMgMTYuMzlRMTY5LjIxIDE1LjQwIDE2OC4wNSAxNS40MEwxNjguMDUgMTUuNDBRMTY3LjM2IDE1LjQwIDE2Ni44MyAxNS43MFExNjYuMjkgMTYgMTY2LjAwIDE2LjU0UTE2NS43MCAxNy4wOSAxNjUuNzAgMTcuODBMMTY1LjcwIDE3LjgwUTE2NS43MCAxOC41MSAxNjYuMDAgMTkuMDVRMTY2LjI5IDE5LjYwIDE2Ni44MyAxOS45MFExNjcuMzYgMjAuMjAgMTY4LjA1IDIwLjIwTDE2OC4wNSAyMC4yMFExNjkuMjEgMjAuMjAgMTcwLjAzIDE5LjIyTDE3MC4wMyAxOS4yMkwxNzEuNTQgMjAuNThRMTcwLjkzIDIxLjM1IDE3MC4wMCAyMS43NlExNjkuMDggMjIuMTcgMTY3LjkyIDIyLjE3TDE2Ny45MiAyMi4xN1ExNjYuNjAgMjIuMTcgMTY1LjU1IDIxLjYxUTE2NC41MCAyMS4wNSAxNjMuOTAgMjAuMDVRMTYzLjMwIDE5LjA2IDE2My4zMCAxNy44MFpNMTc4LjQ1IDIyTDE3Ni4wNyAyMkwxNzYuMDcgMTMuNjBMMTc4LjQ1IDEzLjYwTDE3OC40NSAxNi43NkwxODEuNjkgMTYuNzZMMTgxLjY5IDEzLjYwTDE4NC4wNiAxMy42MEwxODQuMDYgMjJMMTgxLjY5IDIyTDE4MS42OSAxOC43MkwxNzguNDUgMTguNzJMMTc4LjQ1IDIyWk0xODkuMTYgMTguMjZMMTg5LjE2IDE4LjI2TDE4OS4xNiAxMy42MEwxOTEuNTQgMTMuNjBMMTkxLjU0IDE4LjE5UTE5MS41NCAyMC4yMCAxOTMuMTMgMjAuMjBMMTkzLjEzIDIwLjIwUTE5NC43MSAyMC4yMCAxOTQuNzEgMTguMTlMMTk0LjcxIDE4LjE5TDE5NC43MSAxMy42MEwxOTcuMDUgMTMuNjBMMTk3LjA1IDE4LjI2UTE5Ny4wNSAyMC4xMyAxOTYuMDEgMjEuMTVRMTk0Ljk3IDIyLjE3IDE5My4xMSAyMi4xN0wxOTMuMTEgMjIuMTdRMTkxLjIzIDIyLjE3IDE5MC4xOSAyMS4xNVExODkuMTYgMjAuMTMgMTg5LjE2IDE4LjI2WiIgZmlsbD0iI0ZGRkZGRiIgeD0iMTE3LjI0Ii8+PC9zdmc+)](https://forthebadge.com)
 
 
-FOTO CAPTURA JUEGO (O AL MENOS TITULO)
+![avatar](./src/assets/mapadefinitivo.png)
 
-VIDEO
+
 
 
 desarrollado en HTML Canvas Graphics Juego
 entorno de Node.js
 
-## Instrucciones/descripción del objetivo del juego
-(copiar proyectos canvas car-pacman)
+## Tabla de contenidos / (indice)
+
+1. Descripción del juego
+    1. Objetivo del juego
+    2. Información del juego
+    3. Instrucciones
+2. Proyecto y motivación
+3. Estructura del proyecto
+4. Tecnologías empleadas
+5. Manual de instalación y deployment
+    1. Instalación
+    2. Deploy
+6. Entornos de ejecución
+7. Variables globales
+8. Listado de paquetes y dependencias
+    1. Paquetes
+    2. Dependencias
+9. Estadísticas
+10. Agradecimientos
+11. Licencias
+
+```
+├───📁 docs/
+├───📁 public/
+│   └───📄 style.css
+├───📁 src/
+│   ├───📁 actors/
+│   │   ├───📄 Actor.ts
+│   │   ├───📄 Background.ts
+│   │   ├───📄 Bayas.ts
+│   │   ├───📄 Ekans.ts
+│   │   ├───📄 FPSViewer.ts
+│   │   ├───📄 ObstaculoBaya.ts
+│   │   └───📄 Pikachu.ts
+│   ├───📁 assets/
+│   │   ├───📁 bayas/
+│   │   ├───📄 ekansSprites.png
+│   │   ├───📄 fondoPokemon.png
+│   │   ├───📄 mapadefinitivo.png
+│   │   ├───📄 MapaJuegoPokemon.png
+│   │   ├───📄 pikasprites.png
+│   │   ├───📄 pokemon-opening.mp3
+│   │   └───📄 PokemonTitle.png
+│   ├───📁 types/
+│   │   └───📄 Point.ts
+│   ├───📁 utils/
+│   │   ├───📄 angleToRad.ts
+│   │   ├───📄 checkLimits.ts
+│   │   └───📄 KeyboardMap.ts
+│   └───📄 script.ts
+├───📄 .gitignore
+├───📄 index.d.ts
+├───📄 index.html
+├───📄 package-lock.json
+├───📄 package.json
+├───📄 README.md
+├───📄 tsconfig.json
+└───📄 tsconfig.tsbuildinfo
+
+
+```
+
+
+## Descripción del objetivo del juego
+
+> 
+
+Primer proyecto de juego en 2D realizado en CORE Code School. El juego está basado en el mundo Pokemon, con un estilo retro al más puro estilo de  la GameBoy Advance, para los más nostalgicos.
+
+## Objetivo del juego:
+
+> 
+
+LLeva a Pikachu y muevete a través de un arduo camino lleno de peligros, esquivando obstaculos y cualquier contacto con los ekans hasta llegar al podium de la victoria, pero antes tendrás que recoger las bayas que están desperdigadas por el mapa, ¡Hazte con todas!.
+ 
+## Información del juego:
+
+> 
+
+- Mapa
+> 
+
+El mapa está formado por una serie de 7 caminos infestado de Ekans. Los caminos se iran uniendo a medida que avanza en el mapa y se acerca el final.
+El mapa está delimitado por vallas, árboles y casas, entre otros.
+Al llegar al último camino después de cruzar el puente y con todas las bayas llevadas contigo, tendrás que subirte en el podio de la victoria para ganar el juego.
+
+
+- Bayas
+> 
+Las bayas pueden aparecer en tu camino, no las ignores. Recoge tantas como haya en el mapa y consigue todas las que se muestren en el marcador. Una vez conseguidas todas las bayas, tendrás que subirte en el podio de la victoria y así poder ganar el juego.
+
+- Pikachu
+> 
+No dejes que los ekans te muerdan. Mantén todas tus bayas a salvo de los ekans sin que te toquen, sino volverás a la posición inicial donde empezaste y tendrás que volver a recolectar todas las bayas.
+30 triplica los puntos que ganas.
+
+
+- Ekans
+> 
+
+Alejate de estos pokemons ya que toparte con ellos será tu perdición. Estos ekans estarán distribuidos en grupo por cada uno de los caminos del mapa para impedirte que ganes el juego. Una vez te toque un ekans tendrás que volver a empezar desde tu posición inicial. Si llevas bayas contigo... ¡Mala suerte!, volverás sin ninguna de tus bayas.
+
 
 ### Instrucciones
+> 
 
-### Descripción del objetivo del juego
+| Movimiento     | Pikachu |
+| ---      | ---    |
+| Subir | ⬆️    |
+| Derecha | ➡️|    |
+| Bajar | ⬇️      |
+| Izquierda | ⬅️|   |
 
 
-## Tabla de contenidos (indice)
+
+## Tecnologias empleadas
+
+- Lenguajes y herramientas utilizados:
+
+
+| Vite    |
+| Javascript |
+| Typescript |
+| HTML |
+| CSS |
+
 
 
 First line with two spaces after.  
@@ -44,17 +159,102 @@ And the next line.
 
 ## Proyecto y Motivación
 
+Este proyecto nace inspirado en el universo Pokemon mezclado con un juego clásico al que todos hemos jugado alguna vez como el Frogger. El proyecto como parte de mi formación, no sólo ha supuesto un reto para mí, sino que siempre quise probar la experiencia de crear un juego en 2D. Realizar este juego ha sido un desafío hacia todo lo que sé en programación y a veces a llegado a ser frustrante. Empezar es dificil pero una vez vas avanzando y ves que va cogiendo forma y funcionando. El proyecto está en proceso de completar las últimas funcionalidades ya que para todo lo que tenía en mente 2 semanas es un tiempo muy reducido para alguien que crea un juego con typescript por primera vez. Pero orgulloso de conseguir lo que tengo hasta el momento.
+>
+La motivación que me lleva a desarrollar este juego, es que fue uno de los juegos arcades a los que mas hora dediqué de pequeño.
+
+
+
+
 ## Estructura del juego
+
+
+
+
+### Uso de sprites para la representación del juego:
+
+- Sprites de actores principales:
+
+|  Pikachu     |  Ekans |
+| ---      | ---    |
+| ![avatar](./src/assets/pikasprites.png) | ![avatar](./src/assets/ekansSprites.png)    |
+
+
+### Mapa
+
+Para el mapa he usado Photoshop para poder crear un mapa único y original
+
+
 
 El proyecto está dividido en:
 
 - Actores
 
-- 
+Structure
+The project is divided into:
 
-### Juega al proyecto "aquí"
+Client: It contains the implementation of dynamic dashboards using libraries such as Streamlit, Plotly, etc.
+
+Server: Api that is consumed to obtain the necessary resources to supply the client. Api that is consumed to obtain the necessary resources to supply the customer. The Api is implemented using the FastApi python framework
+
+Data: This directory contains the csv file with the statistics for each Euro 2020 match and a Jupyter Notebook in which the data is processed and cleaned and then stored in a database.
+
+
+
+
+
+
 
 ## Manual de instalación y deployment
+
+### Instalación
+
+Para descargarnos el juego, instalarlo, debemos ejecutar los siguientes comandos.
+
+- Clonamos el repositorio
+
+```
+git clone git@github.com:luiscaboc/luiscabocastro-PokemonRush.git / https://github.com/luiscaboc/luiscabocastro-PokemonRush
+
+```
+
+> git clone git@github.com:luiscaboc/luiscabocastro-PokemonRush.git / https://github.com/luiscaboc/luiscabocastro-PokemonRush
+
+- Nos situamos en la carpeta 
+
+> 
+
+- Instalamos las dependencias
+
+> npm install
+
+### Ejecución
+
+- Comando para ejecutar el juego en modo desarrollo
+
+> npm run dev
+
+- Comando para ejecutar el juego en modo producción
+
+> npm run start
+
+### Building
+
+- Comando para compilar el juego
+
+> npm run build
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Ejemplos de código
 
@@ -71,15 +271,27 @@ El proyecto está dividido en:
 
 ## variables globales
 
+To run this project, you will need to add the following environment variables to your .env file
+
+FOOTBALL_DATA_API_TOKEN
+
+MONGODB_URL
+
+To add some interesting data, requests are made to the following api football-data, you can get an api token for free
+
+You can add a connection url to Mongodb (on-premises or in the cloud)
+
 ## Listado de paquetes y dependencias
 
 ## Estadísticas
 
 ## Licencias
 
+https://choosealicense.com/licenses/mit/
+
 ## Agradecimientos
 
-## Otras consideraciones
+
 
 
 
@@ -91,6 +303,7 @@ Instalar npm o yarn como gestores de paquetes
 README.md
 
 
+
 > ## The quarterly results look great!
 >
 > - Revenue was off the chart.
@@ -99,14 +312,6 @@ README.md
 >  *Everything* is going according to **plan**.
 
 
-## Ordered Lists
-
-1. First item
-2. Second item
-3. Third item
-    1. Indented item
-    2. Indented item
-4. Fourth item
 
 
  ## Unordered Lists
@@ -194,13 +399,7 @@ My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 - [ ] Update the website
 - [ ] Contact the media
 
-## emojis
 
-Gone camping! :tent: Be back soon.
-
-That is so funny! :joy:
-
-NO SE MUESTRAN LOS EMOJIS, PREGUNTAR
 
 # Highlight
 

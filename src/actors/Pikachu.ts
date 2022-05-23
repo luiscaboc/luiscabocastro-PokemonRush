@@ -1,6 +1,5 @@
 import { Actor } from './Actor';
 import { Point } from '../types/Point';
-// import { converAngleToRad } from '../utils/angleToRad';
 import imagePika from "../assets/pikasprites.png";
 
 export class Pikachu extends Actor {
@@ -11,7 +10,6 @@ export class Pikachu extends Actor {
  
 
    // IMAGES
-   //image: HTMLImageElement;
    imagePika: HTMLImageElement;
    sxParameters: number[];
    syParameters: number[];
