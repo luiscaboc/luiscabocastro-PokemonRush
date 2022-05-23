@@ -12,7 +12,7 @@
 
 [Let's Play!](https://luiscaboc.github.io/luiscabocastro-PokemonRush/)
 
-![avatar](./src/assets/mapadefinitivo.png)
+[![Image from Gyazo](https://i.gyazo.com/d3800f34a103aebf537c514bbd5bc39f.gif)](https://gyazo.com/d3800f34a103aebf537c514bbd5bc39f)
 
 # Index
 

@@ -9,8 +9,6 @@ export class Ekans extends Actor {
   speed: Point;
   actor: Pikachu;
   touched: boolean;
-
-  // IMAGES
   imageEkans: HTMLImageElement;
   sxParameters: number[];
   timer: number;
@@ -30,7 +28,6 @@ export class Ekans extends Actor {
     this.actor = actor;
   }
 
-  // add delta to update
   update(delta: number): void {
     let actorPos = this.actor.position;
     let ekansPos = this.position;
@@ -38,24 +35,13 @@ export class Ekans extends Actor {
       Math.pow(ekansPos.x - actorPos.x, 2) +
         Math.pow(ekansPos.y - actorPos.y, 2)
     );
-    // speed * delta
     let newPosX = this.position.x + this.speed.x * delta;
-
-    // if (newPosX <= 1140 - this.ekansSize/2 && newPosX >= this.ekansSize/2) {
-    //   this.origin.x = newPosX;
-
-    // if (this.origin.x > 1144 + this.ekansSize){
-    //   this.origin.x = 0 - this.ekansSize;
-    // }
-    // }
 
     if (this.position.x < 0) {
       newPosX = 1200;
     }
     if (distance < this.ekansSize) {
       this.touched = true;
-
-      //console.log(this.touched)
     }
 
     this.timer += delta;
@@ -65,13 +51,8 @@ export class Ekans extends Actor {
       this.timer = 0;
     }
     this.position.x = newPosX;
-
-    //console.log("actor:", actorPos , "baya:", bayaPos);
   }
 
-  //this.origin.x = (this.origin.x + this.speed) % 500;
-
-  //add delta to draw
   draw(delta: number, ctx: CanvasRenderingContext2D) {
     let origin = this.position;
 
@@ -80,8 +61,6 @@ export class Ekans extends Actor {
       direction = 180;
     }
     ctx.translate(origin.x, origin.y);
-    // Remember to paint a rectangle behind to configure your image
-    //ctx.fillRect(0, 0, this.ekansSize, this.ekansSize); //medidas donde empieza pikachu
 
     if (!this.touched) {
       ctx.drawImage(
@@ -98,26 +77,3 @@ export class Ekans extends Actor {
     }
   }
 }
-
-//////////////////////////////////HACER LO MISMO Q CON LAS BAYAS EL PIKACHU
-// //add delta to draw
-// draw(delta: number, ctx: CanvasRenderingContext2D) {
-//   let origin = this.position;
-//   ctx.translate(origin.x, origin.y);
-//   // Remember to paint a rectangle behind to configure your image
-//   //ctx.fillRect(0, 0, this.bayaFrambuSize, this.bayaFrambuSize); //medidas donde empieza pikachu
-
-//   if (!this.touched) {
-//     ctx.drawImage(
-//       this.imageBaya,
-//       23,
-//       23,
-//       80,
-//       90,
-//       0,
-//       0,
-//       this.bayaSize,
-//       this.bayaSize
-//     );
-//   }
-// }

@@ -7,10 +7,7 @@ export class Pikachu extends Actor {
    pikachuMove: number;
    maxSpeed: number;
    speed: Point;
- 
-
-   // IMAGES
-   imagePika: HTMLImageElement;
+    imagePika: HTMLImageElement;
    sxParameters: number[];
    syParameters: number[];
    timer: number;
